@@ -22,3 +22,4 @@ urls:
     repositories:
       - socialgouv/www
   - url: https://beta.gouv.fr
+  - url: https://www.pole-emploi.fr
