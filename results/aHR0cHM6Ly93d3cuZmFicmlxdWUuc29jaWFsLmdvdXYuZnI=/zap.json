@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.0",
-	"@generated": "Thu, 25 Nov 2021 13:55:35",
+	"@generated": "Thu, 25 Nov 2021 14:11:07",
 	"site":[ 
 		{
 			"@name": "https://www.fabrique.social.gouv.fr",
@@ -422,13 +422,6 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/_next/static/chunks/2fc169ac6428d525f784487c8effde364b7d53a1.40271f9aa72432154f9b.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "308308616"
-						},
-						{
 							"uri": "https://www.fabrique.social.gouv.fr/_next/static/chunks/framework.a3bb2ad893c940fc2199.js",
 							"method": "GET",
 							"param": "",
@@ -506,13 +499,13 @@
 							"evidence": "308308616"
 						}
 					],
-					"count": "12",
+					"count": "11",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>308308616, which evaluates to: 1979-10-09 09:16:56</p>",
+					"otherinfo": "<p>1073741823, which evaluates to: 2004-01-10 13:37:03</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "270"
+					"sourceid": "266"
 				},
 				{
 					"pluginid": "10094",
