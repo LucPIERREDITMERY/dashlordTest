@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.0",
-	"@generated": "Sun, 21 Nov 2021 00:57:39",
+	"@generated": "Thu, 25 Nov 2021 14:28:44",
 	"site":[ 
 		{
 			"@name": "https://beta.gouv.fr",
@@ -8,32 +8,6 @@
 			"@port": "443",
 			"@ssl": "true",
 			"alerts": [ 
-				{
-					"pluginid": "10062",
-					"alertRef": "10062",
-					"alert": "PII Disclosure",
-					"name": "PII Disclosure",
-					"riskcode": "3",
-					"confidence": "3",
-					"riskdesc": "High (High)",
-					"desc": "<p>The response contains Personally Identifiable Information, such as CC number, SSN and similar sensitive data.</p>",
-					"instances":[ 
-						{
-							"uri": "https://beta.gouv.fr/content/docs/StateStartups-Foucaud.pdf",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "5001000444444333333"
-						}
-					],
-					"count": "1",
-					"solution": "",
-					"otherinfo": "<p>Credit Card Type detected: Maestro</p><p>Bank Identification Number: 500100</p><p>Brand: MAESTRO</p><p>Category: </p><p>Issuer: </p>",
-					"reference": "",
-					"cweid": "359",
-					"wascid": "13",
-					"sourceid": "2003"
-				},
 				{
 					"pluginid": "10038",
 					"alertRef": "10038",
@@ -154,7 +128,7 @@
 					"reference": "<p>https://vulncat.fortify.com/en/detail?id=desc.config.dotnet.html5_overly_permissive_cors_policy</p>",
 					"cweid": "264",
 					"wascid": "14",
-					"sourceid": "1878"
+					"sourceid": "1893"
 				},
 				{
 					"pluginid": "10108",
@@ -257,7 +231,7 @@
 					"reference": "<p>https://owasp.org/www-community/attacks/Reverse_Tabnabbing</p><p>https://dev.to/ben/the-targetblank-vulnerability-by-example</p><p>https://mathiasbynens.github.io/rel-noopener/</p><p>https://medium.com/@jitbit/target-blank-the-most-underestimated-vulnerability-ever-96e328301f4c</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "72"
+					"sourceid": "57"
 				},
 				{
 					"pluginid": "10099",
@@ -283,7 +257,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "1917"
+					"sourceid": "1922"
 				},
 				{
 					"pluginid": "90003",
@@ -1055,7 +1029,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "72"
+					"sourceid": "57"
 				},
 				{
 					"pluginid": "10021",
@@ -1185,13 +1159,6 @@
 							"evidence": "fr/uploads/DINUM_SchemaPluriannuel_2020"
 						},
 						{
-							"uri": "https://beta.gouv.fr/approche/formation/mooc/sequence-3-mesurer-impact.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "/content/docs/mooc/15-impact-Maintenant-pole-emploi"
-						},
-						{
 							"uri": "https://beta.gouv.fr/assets/images/favicons/safari-pinned-tab.svg",
 							"method": "GET",
 							"param": "",
@@ -1232,6 +1199,13 @@
 							"param": "",
 							"attack": "",
 							"evidence": "2Fpaquet-mobilite-soutien-a-l-accord-conclu-avec-les-ministres-de-l-ue"
+						},
+						{
+							"uri": "https://beta.gouv.fr/startups/la-bonne-alternance.html",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "com/u/0/reporting/1v-Sim2qMlFSMn4n9JJWaMk8PIONvM757/page/FZIGC"
 						},
 						{
 							"uri": "https://beta.gouv.fr/startups/transport.html",
@@ -1337,14 +1311,14 @@
 							"evidence": "select"
 						},
 						{
-							"uri": "https://beta.gouv.fr/startups/?incubateur=bercy",
+							"uri": "https://beta.gouv.fr/startups/?incubateur=culture",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "DB"
 						},
 						{
-							"uri": "https://beta.gouv.fr/startups/?incubateur=bercy",
+							"uri": "https://beta.gouv.fr/startups/?incubateur=culture",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1353,11 +1327,11 @@
 					],
 					"count": "13",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
-					"otherinfo": "<p>The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\"></p><p>    (function() {</p><p>        window.buildDate = '2021-11-20';</p><p>        window.data = {\"employer\":{\"a\", see evidence field for the suspicious comment/snippet.</p>",
+					"otherinfo": "<p>The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\"></p><p>    (function() {</p><p>        window.buildDate = '2021-11-25';</p><p>        window.data = {\"employer\":{\"a\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "840"
+					"sourceid": "811"
 				},
 				{
 					"pluginid": "10109",
@@ -1470,70 +1444,63 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 21207"
-						},
-						{
-							"uri": "https://beta.gouv.fr",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Age: 21208"
+							"evidence": "Age: 2575"
 						},
 						{
 							"uri": "https://beta.gouv.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 21208"
+							"evidence": "Age: 2576"
 						},
 						{
 							"uri": "https://beta.gouv.fr/approche",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 945"
+							"evidence": "Age: 1931"
 						},
 						{
 							"uri": "https://beta.gouv.fr/approche/construction",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 945"
+							"evidence": "Age: 1932"
 						},
 						{
 							"uri": "https://beta.gouv.fr/approche/investigation",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 945"
+							"evidence": "Age: 1931"
 						},
 						{
 							"uri": "https://beta.gouv.fr/communaute/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 944"
+							"evidence": "Age: 1929"
 						},
 						{
 							"uri": "https://beta.gouv.fr/communaute/annuaire",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 949"
+							"evidence": "Age: 1935"
 						},
 						{
 							"uri": "https://beta.gouv.fr/devenir-intrapreneur",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 946"
+							"evidence": "Age: 1931"
 						},
 						{
 							"uri": "https://beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 11851"
+							"evidence": "Age: 1936"
 						},
 						{
 							"uri": "https://beta.gouv.fr/sitemap.xml",
@@ -1547,10 +1514,10 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 946"
+							"evidence": "Age: 1931"
 						}
 					],
-					"count": "12",
+					"count": "11",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>",
 					"otherinfo": "<p>The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use.</p>",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
@@ -1755,7 +1722,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "841"
+					"sourceid": "849"
 				}
 			]
 		}
