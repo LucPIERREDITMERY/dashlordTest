@@ -6,7 +6,7 @@
       "value": "1",
       "domain": "www.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1637851304,
+      "expires": 1637852851,
       "size": 15,
       "httpOnly": false,
       "secure": false,
@@ -18,10 +18,10 @@
     },
     {
       "name": "_pk_id.2.6321",
-      "value": "ee518bc806301e60.1637849505.",
+      "value": "6cec4fe6e9bb100c.1637851052.",
       "domain": "www.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1671804705,
+      "expires": 1671806252,
       "size": 41,
       "httpOnly": false,
       "secure": false,
@@ -33,7 +33,7 @@
     }
   ],
   "headers": {
-    "date": "Thu, 25 Nov 2021 14:11:43 GMT",
+    "date": "Thu, 25 Nov 2021 14:37:30 GMT",
     "content-type": "text/html",
     "last-modified": "Mon, 22 Nov 2021 23:52:10 GMT",
     "vary": "Accept-Encoding",
