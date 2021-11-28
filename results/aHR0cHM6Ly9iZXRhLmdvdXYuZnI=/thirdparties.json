@@ -26,14 +26,6 @@
     },
     {
       "type": "cloudfront",
-      "url": "https://d33wubrfki0l68.cloudfront.net/js/0f62d6c2c169e85fe272b16c7673aeed5009161c/assets/additional/js/lozad.min.js",
-      "details": {
-        "id": "cloudfront",
-        "message": "Host files locally"
-      }
-    },
-    {
-      "type": "cloudfront",
       "url": "https://d33wubrfki0l68.cloudfront.net/4cc35a5f882145ec7feb23ac0a3cac8bd2832b93/cdaec/assets/gouvfr/fonts/marianne-bold.woff2",
       "details": {
         "id": "cloudfront",
@@ -47,6 +39,14 @@
         "id": "cloudfront",
         "message": "Host files locally"
       }
+    },
+    {
+      "type": "cloudfront",
+      "url": "https://d33wubrfki0l68.cloudfront.net/js/0f62d6c2c169e85fe272b16c7673aeed5009161c/assets/additional/js/lozad.min.js",
+      "details": {
+        "id": "cloudfront",
+        "message": "Host files locally"
+      }
     }
   ],
   "cookies": [
@@ -55,7 +55,7 @@
       "value": "1",
       "domain": "beta.gouv.fr",
       "path": "/",
-      "expires": 1637853423,
+      "expires": 1638063988,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -67,10 +67,10 @@
     },
     {
       "name": "_pk_id.21.968e",
-      "value": "9e446bad547e5d43.1637851624.",
+      "value": "66103af810d6664d.1638062189.",
       "domain": "beta.gouv.fr",
       "path": "/",
-      "expires": 1671806824,
+      "expires": 1672017389,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -84,13 +84,14 @@
   "headers": {
     "cache-control": "public, max-age=0, must-revalidate",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Thu, 25 Nov 2021 14:47:03 GMT",
-    "etag": "\"e02d17073bb12ed86a9f0fad2a2f97cc-ssl-df\"",
+    "date": "Sat, 27 Nov 2021 13:57:21 GMT",
+    "etag": "\"ec8b1aafe0d40bd9fa529bfd18e26959-ssl-df\"",
     "strict-transport-security": "max-age=31536000",
     "content-encoding": "br",
+    "age": "40747",
     "vary": "Accept-Encoding",
-    "age": "0",
-    "x-nf-request-id": "01FNBS0VK6XPHWRNH3HQ84H4GJ",
+    "x-nf-request-id": "01FNJ1TSQGNYGJ28WWWXNE8ZMF",
+    "content-length": "10680",
     "server": "Netlify"
   },
   "endpoints": [
@@ -150,7 +151,7 @@
     },
     {
       "hostname": "d33wubrfki0l68.cloudfront.net",
-      "ip": "13.249.32.166",
+      "ip": "54.239.153.175",
       "geoip": {
         "continent": {
           "code": "NA",
