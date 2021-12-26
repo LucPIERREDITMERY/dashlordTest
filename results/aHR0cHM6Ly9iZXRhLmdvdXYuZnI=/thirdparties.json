@@ -18,22 +18,6 @@
     },
     {
       "type": "cloudfront",
-      "url": "https://d33wubrfki0l68.cloudfront.net/4cc35a5f882145ec7feb23ac0a3cac8bd2832b93/cdaec/assets/gouvfr/fonts/marianne-bold.woff2",
-      "details": {
-        "id": "cloudfront",
-        "message": "Host files locally"
-      }
-    },
-    {
-      "type": "cloudfront",
-      "url": "https://d33wubrfki0l68.cloudfront.net/caf80cdb0cce3a53608beec2be6ed90fcdc263d6/58e8b/assets/gouvfr/fonts/marianne-regular.woff2",
-      "details": {
-        "id": "cloudfront",
-        "message": "Host files locally"
-      }
-    },
-    {
-      "type": "cloudfront",
       "url": "https://d33wubrfki0l68.cloudfront.net/js/b8fcb6f7d29a9cf5497b26b4ab17c3f90d049747/assets/gouvfr/js/dsfr.module.min.js",
       "details": {
         "id": "cloudfront",
@@ -47,6 +31,22 @@
         "id": "cloudfront",
         "message": "Host files locally"
       }
+    },
+    {
+      "type": "cloudfront",
+      "url": "https://d33wubrfki0l68.cloudfront.net/4cc35a5f882145ec7feb23ac0a3cac8bd2832b93/cdaec/assets/gouvfr/fonts/marianne-bold.woff2",
+      "details": {
+        "id": "cloudfront",
+        "message": "Host files locally"
+      }
+    },
+    {
+      "type": "cloudfront",
+      "url": "https://d33wubrfki0l68.cloudfront.net/caf80cdb0cce3a53608beec2be6ed90fcdc263d6/58e8b/assets/gouvfr/fonts/marianne-regular.woff2",
+      "details": {
+        "id": "cloudfront",
+        "message": "Host files locally"
+      }
     }
   ],
   "cookies": [
@@ -55,7 +55,7 @@
       "value": "1",
       "domain": "beta.gouv.fr",
       "path": "/",
-      "expires": 1639878081,
+      "expires": 1640482844,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -67,10 +67,10 @@
     },
     {
       "name": "_pk_id.21.968e",
-      "value": "90ca80acae3d524c.1639876282.",
+      "value": "78ff993fde38d0dc.1640481044.",
       "domain": "beta.gouv.fr",
       "path": "/",
-      "expires": 1673831482,
+      "expires": 1674436244,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -84,14 +84,14 @@
   "headers": {
     "cache-control": "public, max-age=0, must-revalidate",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Sat, 18 Dec 2021 18:49:52 GMT",
-    "etag": "\"ff79e56307d697e91fd6b6e738531d86-ssl-df\"",
+    "date": "Fri, 24 Dec 2021 20:24:40 GMT",
+    "etag": "\"a42542b29f8712fd008e91b5dd47bd47-ssl-df\"",
     "strict-transport-security": "max-age=31536000",
-    "content-encoding": "br",
-    "content-length": "10944",
+    "content-encoding": "gzip",
+    "content-length": "11738",
     "vary": "Accept-Encoding",
-    "x-nf-request-id": "01FQ83WGP6SRVQSCWWPZXD32DP",
-    "age": "22890",
+    "x-nf-request-id": "01FQT4MD7SG5W3B9FB8YDN18TR",
+    "age": "103563",
     "server": "Netlify"
   },
   "endpoints": [
@@ -151,7 +151,7 @@
     },
     {
       "hostname": "d33wubrfki0l68.cloudfront.net",
-      "ip": "13.249.46.145",
+      "ip": "52.84.160.148",
       "geoip": {
         "continent": {
           "code": "NA",
