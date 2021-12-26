@@ -1,6 +1,6 @@
 {
-	"@version": "2.11.0",
-	"@generated": "Sun, 5 Dec 2021 01:00:42",
+	"@version": "2.11.1",
+	"@generated": "Sun, 26 Dec 2021 01:02:15",
 	"site":[ 
 		{
 			"@name": "https://www.pole-emploi.fr",
@@ -8,6 +8,32 @@
 			"@port": "443",
 			"@ssl": "true",
 			"alerts": [ 
+				{
+					"pluginid": "10062",
+					"alertRef": "10062",
+					"alert": "PII Disclosure",
+					"name": "PII Disclosure",
+					"riskcode": "3",
+					"confidence": "3",
+					"riskdesc": "High (High)",
+					"desc": "<p>The response contains Personally Identifiable Information, such as CC number, SSN and similar sensitive data.</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.pole-emploi.fr/actualites/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "578957467348"
+						}
+					],
+					"count": "1",
+					"solution": "",
+					"otherinfo": "<p>Credit Card Type detected: Maestro</p><p>Bank Identification Number: 578957</p><p>Brand: MAESTRO</p><p>Category: </p><p>Issuer: </p>",
+					"reference": "",
+					"cweid": "359",
+					"wascid": "13",
+					"sourceid": "368"
+				},
 				{
 					"pluginid": "10038",
 					"alertRef": "10038",
@@ -54,13 +80,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.pole-emploi.fr/candidat/je-creereprends-une-entreprise.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://www.pole-emploi.fr/candidat/mes-droits-aux-aides-et-allocati.html",
 							"method": "GET",
 							"param": "",
@@ -69,6 +88,13 @@
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/candidat/pole-emploi-et-vous/le-role-du-conseiller.html",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.pole-emploi.fr/candidat/pole-emploi-et-vous/oups--les-erreurs-les-plus-frequ.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -129,13 +155,6 @@
 							"evidence": "<script type=\"text/javascript\" src=\"https://cdn.tagcommander.com/4340/tc_PoleEmploi_23.js\" async></script>"
 						},
 						{
-							"uri": "https://www.pole-emploi.fr/actualites/a-laffiche/pole-emploi-face-a-la-crise-sani.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<script type=\"text/javascript\" src=\"https://cdn.tagcommander.com/4340/tc_PoleEmploi_23.js\" async></script>"
-						},
-						{
 							"uri": "https://www.pole-emploi.fr/candidat/decouvrir-le-marche-du-travail.html",
 							"method": "GET",
 							"param": "",
@@ -172,6 +191,13 @@
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/candidat/pole-emploi-et-vous/oups--les-erreurs-les-plus-frequ.html",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\" src=\"https://cdn.tagcommander.com/4340/tc_PoleEmploi_23.js\" async></script>"
+						},
+						{
+							"uri": "https://www.pole-emploi.fr/candidat/soyez-vigilants.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -212,7 +238,7 @@
 					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "380"
+					"sourceid": "368"
 				},
 				{
 					"pluginid": "10020",
@@ -233,6 +259,13 @@
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/accueil/",
+							"method": "GET",
+							"param": "X-Frame-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.pole-emploi.fr/actualites/",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
@@ -275,13 +308,6 @@
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/candidat/pole-emploi-et-vous/oups--les-erreurs-les-plus-frequ.html",
-							"method": "GET",
-							"param": "X-Frame-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://www.pole-emploi.fr/candidat/vos-droits-et-demarches/vos-demarches-aupres-de-pole-emp/pour-poser-mes-questions.html",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
@@ -410,16 +436,9 @@
 							"param": "",
 							"attack": "",
 							"evidence": "<form method=\"get\" target=\"\" action=\"/annuaire/votre-pole-emploi.rechercheAgence.do\" id=\"agenceForm\" onsubmit=\"addRegionCriteria('');\">"
-						},
-						{
-							"uri": "https://www.pole-emploi.fr/candidat/vos-services-en-ligne/des-partenaires-pour-vous-propos.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form method=\"post\" name=\"searchFormPEHeader\" action=\"/informations/ma-recherche.html\" target=\"_self\" >"
 						}
 					],
-					"count": "13",
+					"count": "12",
 					"solution": "<p>Phase: Architecture and Design</p><p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p><p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</p><p></p><p>Phase: Implementation</p><p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</p><p></p><p>Phase: Architecture and Design</p><p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Use the ESAPI Session Management control.</p><p>This control includes a component for CSRF.</p><p></p><p>Do not use the GET method for any request that triggers a state change.</p><p></p><p>Phase: Implementation</p><p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</p>",
 					"otherinfo": "<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"checkbox-partner\" \"keywords-selectized\" \"location1-selectized\" ].</p>",
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
@@ -500,7 +519,7 @@
 					"reference": "<p>https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html</p>",
 					"cweid": "614",
 					"wascid": "13",
-					"sourceid": "131"
+					"sourceid": "134"
 				},
 				{
 					"pluginid": "10054",
@@ -512,6 +531,13 @@
 					"riskdesc": "Low (Medium)",
 					"desc": "<p>A cookie has been set without the SameSite attribute, which means that the cookie can be sent as a result of a 'cross-site' request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>",
 					"instances":[ 
+						{
+							"uri": "https://www.pole-emploi.fr/*?begin",
+							"method": "GET",
+							"param": "BIGipServerPOOL_PROD_HTTP_ERR",
+							"attack": "",
+							"evidence": "Set-Cookie: BIGipServerPOOL_PROD_HTTP_ERR"
+						},
 						{
 							"uri": "https://www.pole-emploi.fr/*?begin",
 							"method": "GET",
@@ -611,13 +637,13 @@
 							"evidence": "Set-Cookie: TS01debb55"
 						}
 					],
-					"count": "14",
+					"count": "15",
 					"solution": "<p>Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>",
 					"cweid": "1275",
 					"wascid": "13",
-					"sourceid": "117"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "10017",
@@ -631,13 +657,6 @@
 					"instances":[ 
 						{
 							"uri": "https://www.pole-emploi.fr/actualites/",
-							"method": "GET",
-							"param": "https://cdn.tagcommander.com/4340/tc_PoleEmploi_23.js",
-							"attack": "",
-							"evidence": "<script type=\"text/javascript\" src=\"https://cdn.tagcommander.com/4340/tc_PoleEmploi_23.js\" async></script>"
-						},
-						{
-							"uri": "https://www.pole-emploi.fr/actualites/a-laffiche/pole-emploi-face-a-la-crise-sani.html",
 							"method": "GET",
 							"param": "https://cdn.tagcommander.com/4340/tc_PoleEmploi_23.js",
 							"attack": "",
@@ -686,6 +705,13 @@
 							"evidence": "<script type=\"text/javascript\" src=\"https://cdn.tagcommander.com/4340/tc_PoleEmploi_23.js\" async></script>"
 						},
 						{
+							"uri": "https://www.pole-emploi.fr/candidat/soyez-vigilants.html",
+							"method": "GET",
+							"param": "https://cdn.tagcommander.com/4340/tc_PoleEmploi_23.js",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\" src=\"https://cdn.tagcommander.com/4340/tc_PoleEmploi_23.js\" async></script>"
+						},
+						{
 							"uri": "https://www.pole-emploi.fr/candidat/vos-droits-et-demarches/vos-demarches-aupres-de-pole-emp/pour-poser-mes-questions.html",
 							"method": "GET",
 							"param": "https://cdn.tagcommander.com/4340/tc_PoleEmploi_23.js",
@@ -720,7 +746,7 @@
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "380"
+					"sourceid": "368"
 				},
 				{
 					"pluginid": "10110",
@@ -746,7 +772,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "127"
+					"sourceid": "130"
 				},
 				{
 					"pluginid": "10015",
@@ -827,7 +853,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.pole-emploi.fr/candidat/vos-services-en-ligne/des-partenaires-pour-vous-propos.html",
+							"uri": "https://www.pole-emploi.fr/candidat/vos-services-en-ligne.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -909,11 +935,11 @@
 							"evidence": "http://logp6.xiti.com/hit.xiti?s=475540&s2=10&p=transverse::Page_indisponible_(Erreur_404-transverse.html)&roimt=&roivc=&x1=Tapestry&x2=Transverse&x3=0"
 						},
 						{
-							"uri": "https://www.pole-emploi.fr/annuaire/votre-pole-emploi.html",
+							"uri": "https://www.pole-emploi.fr/candidat/vos-droits-et-demarches/vos-demarches-aupres-de-pole-emp/le-calendrier-des-paiements.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "http://www.pole-emploi.fr/annuaire/votre-pole-emploi/"
+							"evidence": "http://www.pole-emploi.fr/candidat/vos-droits-et-demarches/vos-demarches-aupres-de-pole-emp/"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/sitemap.xml",
@@ -921,22 +947,15 @@
 							"param": "",
 							"attack": "",
 							"evidence": "http://logp6.xiti.com/hit.xiti?s=475540&s2=10&p=transverse::Page_indisponible_(Erreur_404-transverse.html)&roimt=&roivc=&x1=Tapestry&x2=Transverse&x3=0"
-						},
-						{
-							"uri": "https://www.pole-emploi.fr/spectacle/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "http://www.pole-emploi.fr/spectacle/"
 						}
 					],
-					"count": "4",
+					"count": "3",
 					"solution": "<p>A page that is available over SSL/TLS must be comprised completely of content which is transmitted over SSL/TLS.</p><p>The page must not contain any content that is transmitted over unencrypted HTTP.</p><p> This includes content from third party sites.</p>",
 					"otherinfo": "<p>tag=img src=http://logp6.xiti.com/hit.xiti?s=475540&s2=10&p=transverse::Page_indisponible_(Erreur_404-transverse.html)&roimt=&roivc=&x1=Tapestry&x2=Transverse&x3=0</p><p></p>",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html</p>",
 					"cweid": "311",
 					"wascid": "4",
-					"sourceid": "117"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "10035",
@@ -1052,6 +1071,13 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
 					"instances":[ 
 						{
+							"uri": "https://www.pole-emploi.fr/*?begin",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "688367808"
+						},
+						{
 							"uri": "https://www.pole-emploi.fr/actualites/",
 							"method": "GET",
 							"param": "",
@@ -1064,6 +1090,13 @@
 							"param": "",
 							"attack": "",
 							"evidence": "51133202"
+						},
+						{
+							"uri": "https://www.pole-emploi.fr/candidat/decouvrir-le-marche-du-travail.html",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "86171778"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/candidat/mes-droits-aux-aides-et-allocati.html",
@@ -1094,76 +1127,20 @@
 							"evidence": "1062668810"
 						},
 						{
-							"uri": "https://www.pole-emploi.fr/region/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "03341356"
-						},
-						{
-							"uri": "https://www.pole-emploi.fr/region/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "20211129"
-						},
-						{
-							"uri": "https://www.pole-emploi.fr/region/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "251657728"
-						},
-						{
-							"uri": "https://www.pole-emploi.fr/region/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "338357632"
-						},
-						{
-							"uri": "https://www.pole-emploi.fr/region/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "51133202"
-						},
-						{
-							"uri": "https://www.pole-emploi.fr/region/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "622649739"
-						},
-						{
-							"uri": "https://www.pole-emploi.fr/region/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "72995896"
-						},
-						{
-							"uri": "https://www.pole-emploi.fr/region/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "82790881"
-						},
-						{
 							"uri": "https://www.pole-emploi.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "671590592"
+							"evidence": "688367808"
 						}
 					],
-					"count": "15",
+					"count": "9",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>03341356, which evaluates to: 1970-02-08 16:09:16</p>",
+					"otherinfo": "<p>688367808, which evaluates to: 1991-10-25 05:16:48</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "380"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "10021",
@@ -1328,11 +1305,11 @@
 							"evidence": "/modules/pr003-cmspefr-templatesSet/css/owl-carousel"
 						},
 						{
-							"uri": "https://www.pole-emploi.fr/candidat/vos-droits-et-demarches/vos-demarches-aupres-de-pole-emp/pour-poser-mes-questions.html",
+							"uri": "https://www.pole-emploi.fr/candidat/pole-emploi-et-vous/oups--les-erreurs-les-plus-frequ.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "fr/files/live/sites/PE/files/actualites/hannah-wei-aso6syjzgps-unsplash4262508722575742181"
+							"evidence": "fr/files/live/sites/PE/files/actualites/logo-oups-264x30842"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/candidat/vos-services-en-ligne.html",
@@ -1472,7 +1449,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "131"
+					"sourceid": "134"
 				},
 				{
 					"pluginid": "10109",
@@ -1520,13 +1497,6 @@
 							"evidence": "<a href=\"#\" tabindex=\"0\" class=\"switch-access skip-link sr-only sr-only-focusable\">\n    <span class=\"icon-eye-close\" aria-hidden=\"true\"></span>\n    Version malvoyants\n</a>"
 						},
 						{
-							"uri": "https://www.pole-emploi.fr/candidat/je-creereprends-une-entreprise.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a href=\"#\" tabindex=\"0\" class=\"switch-access skip-link sr-only sr-only-focusable\">\n    <span class=\"icon-eye-close\" aria-hidden=\"true\"></span>\n    Version malvoyants\n</a>"
-						},
-						{
 							"uri": "https://www.pole-emploi.fr/candidat/mes-droits-aux-aides-et-allocati.html",
 							"method": "GET",
 							"param": "",
@@ -1535,6 +1505,13 @@
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/candidat/pole-emploi-et-vous/le-role-du-conseiller.html",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a href=\"#\" tabindex=\"0\" class=\"switch-access skip-link sr-only sr-only-focusable\">\n    <span class=\"icon-eye-close\" aria-hidden=\"true\"></span>\n    Version malvoyants\n</a>"
+						},
+						{
+							"uri": "https://www.pole-emploi.fr/candidat/pole-emploi-et-vous/oups--les-erreurs-les-plus-frequ.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1592,42 +1569,42 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 4320"
+							"evidence": "Age: 2846"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/accueil/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 4322"
+							"evidence": "Age: 2847"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/favicon.ico",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 529"
+							"evidence": "Age: 2855"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/img/logo-pe.svg",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 3497"
+							"evidence": "Age: 317"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/js/xtclicks.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 5407"
+							"evidence": "Age: 0"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 5901"
+							"evidence": "Age: 1375"
 						}
 					],
 					"count": "6",
