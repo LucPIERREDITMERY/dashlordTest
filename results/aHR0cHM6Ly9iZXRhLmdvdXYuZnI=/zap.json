@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 26 Dec 2021 01:10:12",
+	"@generated": "Sun, 2 Jan 2022 01:05:31",
 	"site":[ 
 		{
 			"@name": "https://beta.gouv.fr",
@@ -32,7 +32,7 @@
 					"reference": "",
 					"cweid": "359",
 					"wascid": "13",
-					"sourceid": "2186"
+					"sourceid": "2190"
 				},
 				{
 					"pluginid": "10038",
@@ -154,7 +154,7 @@
 					"reference": "<p>https://vulncat.fortify.com/en/detail?id=desc.config.dotnet.html5_overly_permissive_cors_policy</p>",
 					"cweid": "264",
 					"wascid": "14",
-					"sourceid": "2078"
+					"sourceid": "2082"
 				},
 				{
 					"pluginid": "10099",
@@ -180,7 +180,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "2104"
+					"sourceid": "2122"
 				},
 				{
 					"pluginid": "90003",
@@ -952,7 +952,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "81"
+					"sourceid": "58"
 				},
 				{
 					"pluginid": "10021",
@@ -1250,11 +1250,11 @@
 					],
 					"count": "13",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
-					"otherinfo": "<p>The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\"></p><p>    (function() {</p><p>        window.buildDate = '2021-12-23';</p><p>        window.data = {\"employer\":{\"a\", see evidence field for the suspicious comment/snippet.</p>",
+					"otherinfo": "<p>The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\"></p><p>    (function() {</p><p>        window.buildDate = '2022-01-02';</p><p>        window.data = {\"employer\":{\"a\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "933"
+					"sourceid": "923"
 				},
 				{
 					"pluginid": "10109",
@@ -1367,84 +1367,84 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 309"
+							"evidence": "Age: 1142"
 						},
 						{
 							"uri": "https://beta.gouv.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 310"
+							"evidence": "Age: 1143"
 						},
 						{
 							"uri": "https://beta.gouv.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 311"
+							"evidence": "Age: 1143"
 						},
 						{
 							"uri": "https://beta.gouv.fr/approche",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 305"
+							"evidence": "Age: 1136"
 						},
 						{
 							"uri": "https://beta.gouv.fr/approche/construction",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 305"
+							"evidence": "Age: 1135"
 						},
 						{
 							"uri": "https://beta.gouv.fr/approche/investigation",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 305"
+							"evidence": "Age: 1136"
 						},
 						{
 							"uri": "https://beta.gouv.fr/communaute/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 301"
+							"evidence": "Age: 1132"
 						},
 						{
 							"uri": "https://beta.gouv.fr/communaute/annuaire",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 309"
+							"evidence": "Age: 1140"
 						},
 						{
 							"uri": "https://beta.gouv.fr/devenir-intrapreneur",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 306"
+							"evidence": "Age: 1135"
 						},
 						{
 							"uri": "https://beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 310"
+							"evidence": "Age: 1143"
 						},
 						{
 							"uri": "https://beta.gouv.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 0"
+							"evidence": "Age: 657"
 						},
 						{
 							"uri": "https://beta.gouv.fr/startups/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 305"
+							"evidence": "Age: 1135"
 						}
 					],
 					"count": "12",
