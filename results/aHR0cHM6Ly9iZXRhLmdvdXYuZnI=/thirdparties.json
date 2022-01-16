@@ -55,7 +55,7 @@
       "value": "1",
       "domain": "beta.gouv.fr",
       "path": "/",
-      "expires": 1641692617,
+      "expires": 1642297195,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -67,10 +67,10 @@
     },
     {
       "name": "_pk_id.21.968e",
-      "value": "393625b27cd162d1.1641690817.",
+      "value": "77025204a98bb391.1642295395.",
       "domain": "beta.gouv.fr",
       "path": "/",
-      "expires": 1675646017,
+      "expires": 1676250595,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -84,14 +84,14 @@
   "headers": {
     "cache-control": "public, max-age=0, must-revalidate",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Sun, 09 Jan 2022 00:58:20 GMT",
-    "etag": "\"5fb2ec659ec9e96e2cf7f8e08cf38a67-ssl-df\"",
+    "date": "Sun, 16 Jan 2022 00:59:32 GMT",
+    "etag": "\"16beb7d2fa7edf9911a1c6344da3f32b-ssl-df\"",
     "strict-transport-security": "max-age=31536000",
-    "content-encoding": "gzip",
-    "content-length": "11738",
+    "content-encoding": "br",
+    "content-length": "10940",
     "vary": "Accept-Encoding",
-    "x-nf-request-id": "01FRY6BQT8H4YVTMH5T910HEQD",
-    "age": "916",
+    "x-nf-request-id": "01FSG6Y05SYH2JBF62Z3R9WBZN",
+    "age": "622",
     "server": "Netlify"
   },
   "endpoints": [
@@ -117,7 +117,7 @@
           "geoname_id": 6252001,
           "iso_code": "US",
           "names": {
-            "de": "USA",
+            "de": "Vereinigte Staaten",
             "en": "United States",
             "es": "Estados Unidos",
             "fr": "États Unis",
@@ -137,7 +137,7 @@
           "geoname_id": 6252001,
           "iso_code": "US",
           "names": {
-            "de": "USA",
+            "de": "Vereinigte Staaten",
             "en": "United States",
             "es": "Estados Unidos",
             "fr": "États Unis",
@@ -151,7 +151,7 @@
     },
     {
       "hostname": "d33wubrfki0l68.cloudfront.net",
-      "ip": "13.35.99.59",
+      "ip": "99.84.47.169",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -171,7 +171,7 @@
           "geoname_id": 6252001,
           "iso_code": "US",
           "names": {
-            "de": "USA",
+            "de": "Vereinigte Staaten",
             "en": "United States",
             "es": "Estados Unidos",
             "fr": "États Unis",
@@ -191,7 +191,7 @@
           "geoname_id": 6252001,
           "iso_code": "US",
           "names": {
-            "de": "USA",
+            "de": "Vereinigte Staaten",
             "en": "United States",
             "es": "Estados Unidos",
             "fr": "États Unis",
