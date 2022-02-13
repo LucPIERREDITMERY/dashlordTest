@@ -55,7 +55,7 @@
       "value": "1",
       "domain": "beta.gouv.fr",
       "path": "/",
-      "expires": 1644111866,
+      "expires": 1644716473,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -67,10 +67,10 @@
     },
     {
       "name": "_pk_id.21.968e",
-      "value": "d2da4aa7b8bf85ce.1644110066.",
+      "value": "92bdfab7f9ff358b.1644714673.",
       "domain": "beta.gouv.fr",
       "path": "/",
-      "expires": 1678065266,
+      "expires": 1678669873,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -84,14 +84,14 @@
   "headers": {
     "cache-control": "public, max-age=0, must-revalidate",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Sat, 05 Feb 2022 18:46:33 GMT",
-    "etag": "\"55573fb8ccfa31a6bf94b96f45e2d572-ssl-df\"",
+    "date": "Sun, 13 Feb 2022 01:04:28 GMT",
+    "etag": "\"b2c4757eeca7c7ff912af57c4762d53d-ssl-df\"",
     "strict-transport-security": "max-age=31536000",
-    "content-encoding": "gzip",
-    "content-length": "11845",
+    "content-encoding": "br",
+    "age": "404",
     "vary": "Accept-Encoding",
-    "x-nf-request-id": "01FV69HBZY3NDH1BT4R8C40NC1",
-    "age": "23272",
+    "x-nf-request-id": "01FVRA4G7F8XSB3MPZN8704JPG",
+    "content-length": "11056",
     "server": "Netlify"
   },
   "endpoints": [
@@ -151,7 +151,7 @@
     },
     {
       "hostname": "d33wubrfki0l68.cloudfront.net",
-      "ip": "13.35.99.59",
+      "ip": "52.84.160.217",
       "geoip": {
         "continent": {
           "code": "NA",

@@ -178,7 +178,7 @@
               "ip"           : "beta.gouv.fr/75.2.60.5",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "prime256v1 secp384r1"
+              "finding"      : "prime256v1"
           }
 ,         {
               "id"           : "TLS_extensions",
@@ -353,7 +353,7 @@
               "ip"           : "beta.gouv.fr/75.2.60.5",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "46 >= 30 days"
+              "finding"      : "39 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -549,21 +549,21 @@
               "ip"           : "beta.gouv.fr/75.2.60.5",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-1 seconds from localtime"
+              "finding"      : "0 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "beta.gouv.fr/75.2.60.5",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1644078453"
+              "finding"      : "1644714049"
           }
 ,         {
               "id"           : "HTTP_headerAge",
               "ip"           : "beta.gouv.fr/75.2.60.5",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "31651 seconds"
+              "finding"      : "656 seconds"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1133,6 +1133,6 @@
               "ip"           : "beta.gouv.fr/75.2.60.5",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "77"
+              "finding"      : "49"
           }
 ]
