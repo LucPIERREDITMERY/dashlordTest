@@ -2,7 +2,7 @@
   "trackers": [
     {
       "type": "cloudfront",
-      "url": "https://d33wubrfki0l68.cloudfront.net/bundles/5246a0064f4c8ceb9f58c33a99b99aa754a835fb.css",
+      "url": "https://d33wubrfki0l68.cloudfront.net/bundles/63e240007397186893d705559a05da0e23cbaafe.css",
       "details": {
         "id": "cloudfront",
         "message": "Host files locally"
@@ -55,7 +55,7 @@
       "value": "1",
       "domain": "beta.gouv.fr",
       "path": "/",
-      "expires": 1644716473,
+      "expires": 1645321383,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -67,10 +67,10 @@
     },
     {
       "name": "_pk_id.21.968e",
-      "value": "92bdfab7f9ff358b.1644714673.",
+      "value": "b164a56962444aa2.1645319583.",
       "domain": "beta.gouv.fr",
       "path": "/",
-      "expires": 1678669873,
+      "expires": 1679274783,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -84,14 +84,14 @@
   "headers": {
     "cache-control": "public, max-age=0, must-revalidate",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Sun, 13 Feb 2022 01:04:28 GMT",
-    "etag": "\"b2c4757eeca7c7ff912af57c4762d53d-ssl-df\"",
+    "date": "Sat, 19 Feb 2022 03:23:28 GMT",
+    "etag": "\"f02dccd22441cf8912d9653964ace1d8-ssl-df\"",
     "strict-transport-security": "max-age=31536000",
-    "content-encoding": "br",
-    "age": "404",
+    "content-encoding": "gzip",
+    "content-length": "11883",
     "vary": "Accept-Encoding",
-    "x-nf-request-id": "01FVRA4G7F8XSB3MPZN8704JPG",
-    "content-length": "11056",
+    "x-nf-request-id": "01FWAB0WX12FV0TCRHTH1DG3JY",
+    "age": "78574",
     "server": "Netlify"
   },
   "endpoints": [
@@ -151,7 +151,7 @@
     },
     {
       "hostname": "d33wubrfki0l68.cloudfront.net",
-      "ip": "52.84.160.217",
+      "ip": "99.84.47.26",
       "geoip": {
         "continent": {
           "code": "NA",

@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 13 Feb 2022 01:10:43",
+	"@generated": "Sun, 20 Feb 2022 01:12:31",
 	"site":[ 
 		{
 			"@name": "https://beta.gouv.fr",
@@ -32,7 +32,7 @@
 					"reference": "",
 					"cweid": "359",
 					"wascid": "13",
-					"sourceid": "2309"
+					"sourceid": "2322"
 				},
 				{
 					"pluginid": "10038",
@@ -154,7 +154,7 @@
 					"reference": "<p>https://vulncat.fortify.com/en/detail?id=desc.config.dotnet.html5_overly_permissive_cors_policy</p>",
 					"cweid": "264",
 					"wascid": "14",
-					"sourceid": "2199"
+					"sourceid": "2209"
 				},
 				{
 					"pluginid": "10020",
@@ -293,7 +293,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<link href='https://d33wubrfki0l68.cloudfront.net/bundles/5246a0064f4c8ceb9f58c33a99b99aa754a835fb.css' rel='stylesheet' type='text/css'/>"
+							"evidence": "<link href='https://d33wubrfki0l68.cloudfront.net/bundles/63e240007397186893d705559a05da0e23cbaafe.css' rel='stylesheet' type='text/css'/>"
 						},
 						{
 							"uri": "https://beta.gouv.fr",
@@ -321,7 +321,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<link href='https://d33wubrfki0l68.cloudfront.net/bundles/751be1df9f6a9105586381ca6f28bab3b21b689d.css' rel='stylesheet' type='text/css'/>"
+							"evidence": "<link href='https://d33wubrfki0l68.cloudfront.net/bundles/73ca55e09efc6b52b6c164ddf14359befa2092a5.css' rel='stylesheet' type='text/css'/>"
 						},
 						{
 							"uri": "https://beta.gouv.fr/robots.txt",
@@ -1283,11 +1283,11 @@
 					],
 					"count": "13",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
-					"otherinfo": "<p>The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\"></p><p>    (function() {</p><p>        window.buildDate = '2022-02-11';</p><p>        window.data = {\"employer\":{\"a\", see evidence field for the suspicious comment/snippet.</p>",
+					"otherinfo": "<p>The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\"></p><p>    (function() {</p><p>        window.buildDate = '2022-02-18';</p><p>        window.data = {\"employer\":{\"a\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "984"
+					"sourceid": "987"
 				},
 				{
 					"pluginid": "10109",
@@ -1400,70 +1400,63 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 296"
-						},
-						{
-							"uri": "https://beta.gouv.fr",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Age: 297"
+							"evidence": "Age: 86624"
 						},
 						{
 							"uri": "https://beta.gouv.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 297"
+							"evidence": "Age: 86625"
 						},
 						{
 							"uri": "https://beta.gouv.fr/approche",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 291"
+							"evidence": "Age: 183"
 						},
 						{
 							"uri": "https://beta.gouv.fr/approche/construction",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 292"
+							"evidence": "Age: 183"
 						},
 						{
 							"uri": "https://beta.gouv.fr/approche/investigation",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 291"
+							"evidence": "Age: 183"
 						},
 						{
 							"uri": "https://beta.gouv.fr/communaute/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 290"
+							"evidence": "Age: 181"
 						},
 						{
 							"uri": "https://beta.gouv.fr/communaute/annuaire",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 296"
+							"evidence": "Age: 187"
 						},
 						{
 							"uri": "https://beta.gouv.fr/devenir-intrapreneur",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 292"
+							"evidence": "Age: 183"
 						},
 						{
 							"uri": "https://beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 297"
+							"evidence": "Age: 85725"
 						},
 						{
 							"uri": "https://beta.gouv.fr/sitemap.xml",
@@ -1477,10 +1470,10 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 292"
+							"evidence": "Age: 184"
 						}
 					],
-					"count": "12",
+					"count": "11",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>",
 					"otherinfo": "<p>The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use.</p>",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
@@ -1685,7 +1678,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "985"
+					"sourceid": "988"
 				}
 			]
 		}
