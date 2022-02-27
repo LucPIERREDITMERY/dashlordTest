@@ -49,7 +49,7 @@
 "cert_trust","www.pole-emploi.fr/185.215.64.1","443","OK","Ok via SAN and CN (same w/o SNI)","",""
 "cert_chain_of_trust","www.pole-emploi.fr/185.215.64.1","443","OK","passed.","",""
 "cert_certificatePolicies_EV","www.pole-emploi.fr/185.215.64.1","443","OK","yes","",""
-"cert_expirationStatus","www.pole-emploi.fr/185.215.64.1","443","OK","200 >= 60 days","",""
+"cert_expirationStatus","www.pole-emploi.fr/185.215.64.1","443","OK","137 >= 60 days","",""
 "cert_notBefore","www.pole-emploi.fr/185.215.64.1","443","INFO","2021-06-16 07:44","",""
 "cert_notAfter","www.pole-emploi.fr/185.215.64.1","443","OK","2022-07-14 07:44","",""
 "cert_extlifeSpan","www.pole-emploi.fr/185.215.64.1","443","OK","certificate has no extended life time according to browser forum","",""
