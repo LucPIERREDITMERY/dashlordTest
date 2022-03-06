@@ -360,7 +360,7 @@
               "ip"           : "www.pole-emploi.fr/185.215.64.1",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "137 >= 60 days"
+              "finding"      : "130 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -1107,6 +1107,6 @@
               "ip"           : "www.pole-emploi.fr/185.215.64.1",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "183"
+              "finding"      : "118"
           }
 ]
