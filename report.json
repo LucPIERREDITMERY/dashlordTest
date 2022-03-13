@@ -158,7 +158,7 @@
     "http": {
       "url": "https://www.fabrique.social.gouv.fr",
       "algorithm_version": 2,
-      "end_time": "Sun, 06 Mar 2022 00:51:18 GMT",
+      "end_time": "Sun, 13 Mar 2022 00:50:03 GMT",
       "grade": "B",
       "hidden": false,
       "likelihood_indicator": "MEDIUM",
@@ -166,7 +166,7 @@
         "Connection": "keep-alive",
         "Content-Encoding": "gzip",
         "Content-Type": "text/html",
-        "Date": "Sun, 06 Mar 2022 00:51:16 GMT",
+        "Date": "Sun, 13 Mar 2022 00:50:01 GMT",
         "ETag": "W/\"6217d0f1-6d3f\"",
         "Last-Modified": "Thu, 24 Feb 2022 18:39:45 GMT",
         "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
@@ -176,9 +176,9 @@
         "X-Frame-Options": "deny",
         "X-XSS-Protection": "1; mode=block"
       },
-      "scan_id": 24939620,
+      "scan_id": 25108279,
       "score": 75,
-      "start_time": "Sun, 06 Mar 2022 00:51:14 GMT",
+      "start_time": "Sun, 13 Mar 2022 00:49:58 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 1,
@@ -725,7 +725,7 @@
         "ip": "www.fabrique.social.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "OK",
-        "finding": "80 >= 30 days"
+        "finding": "73 >= 30 days"
       },
       {
         "id": "cert_notBefore",
@@ -921,14 +921,14 @@
         "ip": "www.fabrique.social.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "INFO",
-        "finding": "-1 seconds from localtime"
+        "finding": "0 seconds from localtime"
       },
       {
         "id": "HTTP_headerTime",
         "ip": "www.fabrique.social.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "INFO",
-        "finding": "1646528861"
+        "finding": "1647133622"
       },
       {
         "id": "HSTS_time",
@@ -1512,7 +1512,7 @@
         "ip": "www.fabrique.social.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "INFO",
-        "finding": "93"
+        "finding": "133"
       }
     ],
     "thirdparties": {
@@ -1523,7 +1523,7 @@
           "value": "1",
           "domain": "www.fabrique.social.gouv.fr",
           "path": "/",
-          "expires": 1646530608,
+          "expires": 1647135365,
           "size": 15,
           "httpOnly": false,
           "secure": false,
@@ -1535,10 +1535,10 @@
         },
         {
           "name": "_pk_id.2.6321",
-          "value": "6625986b2ba96cdc.1646528809.",
+          "value": "0ad123112ce61ef6.1647133566.",
           "domain": "www.fabrique.social.gouv.fr",
           "path": "/",
-          "expires": 1680484009,
+          "expires": 1681088766,
           "size": 41,
           "httpOnly": false,
           "secure": false,
@@ -1550,7 +1550,7 @@
         }
       ],
       "headers": {
-        "date": "Sun, 06 Mar 2022 01:06:47 GMT",
+        "date": "Sun, 13 Mar 2022 01:06:04 GMT",
         "content-type": "text/html",
         "last-modified": "Thu, 24 Feb 2022 18:39:45 GMT",
         "vary": "Accept-Encoding",
@@ -1678,19 +1678,22 @@
         "https://www.fabrique.social.gouv.fr/startups/work-in-france/": {
           "status": 200
         },
-        "https://www.fabrique.social.gouv.fr/startups/work-in-france": {
-          "status": 200
-        },
         "https://www.fabrique.social.gouv.fr/startups/tumeplay/": {
           "status": 200
         },
-        "https://www.fabrique.social.gouv.fr/actus/board-janvier-2019": {
+        "https://www.fabrique.social.gouv.fr/startups/work-in-france": {
           "status": 200
         },
         "https://www.fabrique.social.gouv.fr/startups/1000jours/": {
           "status": 200
         },
+        "https://www.fabrique.social.gouv.fr/actus/board-janvier-2019": {
+          "status": 200
+        },
         "https://www.fabrique.social.gouv.fr/startups/code-du-travail-numerique/": {
+          "status": 200
+        },
+        "https://www.fabrique.social.gouv.fr/startups/domifa/": {
           "status": 200
         },
         "https://www.fabrique.social.gouv.fr/actus/saison2": {
@@ -1846,7 +1849,7 @@
     },
     "zap": {
       "@version": "2.11.1",
-      "@generated": "Sun, 6 Mar 2022 01:06:06",
+      "@generated": "Sun, 13 Mar 2022 01:05:28",
       "site": [
         {
           "@name": "https://www.fabrique.social.gouv.fr",
@@ -1867,13 +1870,6 @@
               "confidence": "3",
               "riskdesc": "Medium (High)",
               "desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>"
-            },
-            {
-              "name": "Incomplete or No Cache-control Header Set",
-              "riskcode": "1",
-              "confidence": "2",
-              "riskdesc": "Low (Medium)",
-              "desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content.</p>"
             },
             {
               "name": "Permissions Policy Header Not Set",
@@ -1911,6 +1907,13 @@
               "desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Ajax Spider may well be more effective than the standard one.</p>"
             },
             {
+              "name": "Re-examine Cache-control Directives",
+              "riskcode": "0",
+              "confidence": "2",
+              "riskdesc": "Informational (Medium)",
+              "desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>"
+            },
+            {
               "name": "Storable and Cacheable Content",
               "riskcode": "0",
               "confidence": "2",
@@ -1925,7 +1928,7 @@
     "lhr": {
       "requestedUrl": "https://www.fabrique.social.gouv.fr/",
       "finalUrl": "https://www.fabrique.social.gouv.fr/",
-      "fetchTime": "2022-03-06T01:06:15.585Z",
+      "fetchTime": "2022-03-13T01:05:36.663Z",
       "runWarnings": [],
       "categories": {
         "performance": {
@@ -1967,49 +1970,49 @@
           "description": "Collects all available metrics.",
           "score": null,
           "scoreDisplayMode": "informative",
-          "numericValue": 4542,
+          "numericValue": 4340,
           "numericUnit": "millisecond",
           "details": {
             "type": "debugdata",
             "items": [
               {
-                "firstContentfulPaint": 1351,
-                "firstMeaningfulPaint": 1351,
-                "largestContentfulPaint": 2900,
-                "firstCPUIdle": 3897,
-                "interactive": 4542,
-                "speedIndex": 1943,
-                "estimatedInputLatency": 20,
-                "totalBlockingTime": 244,
-                "maxPotentialFID": 251,
+                "firstContentfulPaint": 1164,
+                "firstMeaningfulPaint": 1164,
+                "largestContentfulPaint": 2719,
+                "firstCPUIdle": 3700,
+                "interactive": 4340,
+                "speedIndex": 2001,
+                "estimatedInputLatency": 13,
+                "totalBlockingTime": 184,
+                "maxPotentialFID": 205,
                 "cumulativeLayoutShift": 0.000828776741532922,
-                "cumulativeLayoutShiftAllFrames": 0,
+                "cumulativeLayoutShiftAllFrames": 0.000828776741532922,
                 "observedTimeOrigin": 0,
-                "observedTimeOriginTs": 240488935,
+                "observedTimeOriginTs": 272435670,
                 "observedNavigationStart": 0,
-                "observedNavigationStartTs": 240488935,
-                "observedFirstPaint": 461,
-                "observedFirstPaintTs": 240950248,
-                "observedFirstContentfulPaint": 461,
-                "observedFirstContentfulPaintTs": 240950248,
-                "observedFirstMeaningfulPaint": 868,
-                "observedFirstMeaningfulPaintTs": 241356628,
-                "observedLargestContentfulPaint": 981,
-                "observedLargestContentfulPaintTs": 241469543,
-                "observedTraceEnd": 2718,
-                "observedTraceEndTs": 243206938,
-                "observedLoad": 1647,
-                "observedLoadTs": 242136210,
-                "observedDomContentLoaded": 934,
-                "observedDomContentLoadedTs": 241422458,
+                "observedNavigationStartTs": 272435670,
+                "observedFirstPaint": 556,
+                "observedFirstPaintTs": 272991431,
+                "observedFirstContentfulPaint": 556,
+                "observedFirstContentfulPaintTs": 272991431,
+                "observedFirstMeaningfulPaint": 997,
+                "observedFirstMeaningfulPaintTs": 273433009,
+                "observedLargestContentfulPaint": 1184,
+                "observedLargestContentfulPaintTs": 273619681,
+                "observedTraceEnd": 2906,
+                "observedTraceEndTs": 275342161,
+                "observedLoad": 1849,
+                "observedLoadTs": 274284561,
+                "observedDomContentLoaded": 1131,
+                "observedDomContentLoadedTs": 273566231,
                 "observedCumulativeLayoutShift": 0.000828776741532922,
-                "observedCumulativeLayoutShiftAllFrames": 0,
-                "observedFirstVisualChange": 468,
-                "observedFirstVisualChangeTs": 240956935,
-                "observedLastVisualChange": 2718,
-                "observedLastVisualChangeTs": 243206935,
-                "observedSpeedIndex": 939,
-                "observedSpeedIndexTs": 241427843
+                "observedCumulativeLayoutShiftAllFrames": 0.000828776741532922,
+                "observedFirstVisualChange": 553,
+                "observedFirstVisualChangeTs": 272988670,
+                "observedLastVisualChange": 2903,
+                "observedLastVisualChangeTs": 275338670,
+                "observedSpeedIndex": 1068,
+                "observedSpeedIndexTs": 273503393
               },
               {
                 "lcpInvalidated": false
@@ -2031,18 +2034,18 @@
                 "numScripts": 15,
                 "numStylesheets": 1,
                 "numFonts": 3,
-                "numTasks": 1180,
-                "numTasksOver10ms": 9,
+                "numTasks": 1315,
+                "numTasksOver10ms": 8,
                 "numTasksOver25ms": 2,
                 "numTasksOver50ms": 1,
                 "numTasksOver100ms": 0,
                 "numTasksOver500ms": 0,
-                "rtt": 84.94800000000001,
-                "throughput": 71466099.04963343,
-                "maxRtt": 89.757,
-                "maxServerLatency": 249.355,
-                "totalByteWeight": 7755778,
-                "totalTaskTime": 582.9599999999988,
+                "rtt": 113.495,
+                "throughput": 53685478.34453588,
+                "maxRtt": 116.595,
+                "maxServerLatency": 113.923,
+                "totalByteWeight": 7755780,
+                "totalTaskTime": 479.22800000000075,
                 "mainDocumentTransferSize": 7936
               }
             ]
@@ -2054,6 +2057,7 @@
     "stats": null,
     "trivy": null,
     "declaration-a11y": null,
+    "declaration-rgpd": null,
     "summary": {
       "404": 8,
       "httpGrade": "B",
@@ -4562,6 +4566,7 @@
     "stats": null,
     "trivy": null,
     "declaration-a11y": null,
+    "declaration-rgpd": null,
     "summary": {
       "404": "A+",
       "httpGrade": "F",
@@ -4670,26 +4675,26 @@
     "http": {
       "url": "https://beta.gouv.fr",
       "algorithm_version": 2,
-      "end_time": "Sun, 06 Mar 2022 00:59:55 GMT",
+      "end_time": "Sun, 13 Mar 2022 00:56:48 GMT",
       "grade": "D",
       "hidden": false,
       "likelihood_indicator": "MEDIUM",
       "response_headers": {
-        "Age": "114268",
+        "Age": "33808",
         "Cache-Control": "public, max-age=0, must-revalidate",
         "Content-Encoding": "gzip",
-        "Content-Length": "11891",
+        "Content-Length": "11987",
         "Content-Type": "text/html; charset=UTF-8",
-        "Date": "Fri, 04 Mar 2022 17:15:26 GMT",
-        "Etag": "\"821ab3df8aa3d09bb91e860d68ebc194-ssl-df\"",
+        "Date": "Sat, 12 Mar 2022 15:33:20 GMT",
+        "Etag": "\"a6981c6999dfb60cbfdc0276d767831e-ssl-df\"",
         "Server": "Netlify",
         "Strict-Transport-Security": "max-age=31536000",
         "Vary": "Accept-Encoding",
-        "X-Nf-Request-Id": "01FXEBTWZADGWZ935V3J6ZJXRB"
+        "X-Nf-Request-Id": "01FY0CE83J1QKDDRFTSMTXSBZJ"
       },
-      "scan_id": 24939920,
+      "scan_id": 25108531,
       "score": 35,
-      "start_time": "Sun, 06 Mar 2022 00:59:53 GMT",
+      "start_time": "Sun, 13 Mar 2022 00:56:46 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 5,
@@ -5249,7 +5254,7 @@
         "ip": "beta.gouv.fr/75.2.60.5",
         "port": "443",
         "severity": "OK",
-        "finding": "78 >= 30 days"
+        "finding": "71 >= 30 days"
       },
       {
         "id": "cert_notBefore",
@@ -5452,14 +5457,14 @@
         "ip": "beta.gouv.fr/75.2.60.5",
         "port": "443",
         "severity": "INFO",
-        "finding": "1646498567"
+        "finding": "1647095824"
       },
       {
         "id": "HTTP_headerAge",
         "ip": "beta.gouv.fr/75.2.60.5",
         "port": "443",
         "severity": "INFO",
-        "finding": "30610 seconds"
+        "finding": "38007 seconds"
       },
       {
         "id": "HSTS_time",
@@ -5594,7 +5599,7 @@
         "severity": "MEDIUM",
         "cve": "CVE-2013-3587",
         "cwe": "CWE-310",
-        "finding": "potentially VULNERABLE, br gzip HTTP compression detected  - only supplied '/' tested"
+        "finding": "potentially VULNERABLE, gzip br HTTP compression detected  - only supplied '/' tested"
       },
       {
         "id": "POODLE_SSL",
@@ -6029,7 +6034,7 @@
         "ip": "beta.gouv.fr/75.2.60.5",
         "port": "443",
         "severity": "INFO",
-        "finding": "54"
+        "finding": "51"
       }
     ],
     "thirdparties": {
@@ -6089,7 +6094,7 @@
           "value": "1",
           "domain": "beta.gouv.fr",
           "path": "/",
-          "expires": 1646530945,
+          "expires": 1647135597,
           "size": 16,
           "httpOnly": false,
           "secure": false,
@@ -6101,10 +6106,10 @@
         },
         {
           "name": "_pk_id.21.968e",
-          "value": "bd2ed27b373851ae.1646529145.",
+          "value": "d947ed7435511d7f.1647133798.",
           "domain": "beta.gouv.fr",
           "path": "/",
-          "expires": 1680484345,
+          "expires": 1681088998,
           "size": 42,
           "httpOnly": false,
           "secure": false,
@@ -6116,17 +6121,17 @@
         }
       ],
       "headers": {
-        "age": "81652",
+        "age": "34482",
         "cache-control": "public, max-age=0, must-revalidate",
         "content-encoding": "gzip",
         "content-type": "text/html; charset=UTF-8",
-        "date": "Sat, 05 Mar 2022 02:31:32 GMT",
-        "etag": "\"821ab3df8aa3d09bb91e860d68ebc194-ssl-df\"",
+        "date": "Sat, 12 Mar 2022 15:35:15 GMT",
+        "etag": "\"a6981c6999dfb60cbfdc0276d767831e-ssl-df\"",
         "server": "Netlify",
         "strict-transport-security": "max-age=31536000",
         "vary": "Accept-Encoding",
-        "x-nf-request-id": "01FXECHSPCHX19B9Y41HB04AWX",
-        "content-length": "11891"
+        "x-nf-request-id": "01FY0D6B4VTY6WS3MFW09J5KN8",
+        "content-length": "11987"
       },
       "endpoints": [
         {
@@ -6185,7 +6190,7 @@
         },
         {
           "hostname": "d33wubrfki0l68.cloudfront.net",
-          "ip": "54.239.153.38",
+          "ip": "54.239.153.49",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -6271,10 +6276,10 @@
         "https://beta.gouv.fr/startups/Trajpro.html": {
           "status": 200
         },
-        "https://beta.gouv.fr/approche/manifeste": {
+        "https://beta.gouv.fr/en/": {
           "status": 200
         },
-        "https://beta.gouv.fr/en/": {
+        "https://beta.gouv.fr/approche/manifeste": {
           "status": 200
         }
       },
@@ -6522,7 +6527,7 @@
     },
     "zap": {
       "@version": "2.11.1",
-      "@generated": "Sun, 6 Mar 2022 01:11:52",
+      "@generated": "Sun, 13 Mar 2022 01:09:27",
       "site": [
         {
           "@name": "https://beta.gouv.fr",
@@ -6536,6 +6541,13 @@
               "confidence": "3",
               "riskdesc": "High (High)",
               "desc": "<p>The response contains Personally Identifiable Information, such as CC number, SSN and similar sensitive data.</p>"
+            },
+            {
+              "name": "Absence of Anti-CSRF Tokens",
+              "riskcode": "2",
+              "confidence": "1",
+              "riskdesc": "Medium (Low)",
+              "desc": "<p>No Anti-CSRF tokens were found in a HTML submission form.</p><p>A cross-site request forgery is an attack that involves forcing a victim to send an HTTP request to a target destination without their knowledge or intent in order to perform an action as the victim. The underlying cause is application functionality using predictable URL/form actions in a repeatable way. The nature of the attack is that CSRF exploits the trust that a web site has for a user. By contrast, cross-site scripting (XSS) exploits the trust that a user has for a web site. Like XSS, CSRF attacks are not necessarily cross-site, but they can be. Cross-site request forgery is also known as CSRF, XSRF, one-click attack, session riding, confused deputy, and sea surf.</p><p></p><p>CSRF attacks are effective in a number of situations, including:</p><p>    * The victim has an active session on the target site.</p><p>    * The victim is authenticated via HTTP auth on the target site.</p><p>    * The victim is on the same local network as the target site.</p><p></p><p>CSRF has primarily been used to perform an action against a target site using the victim's privileges, but recent techniques have been discovered to disclose information by gaining access to the response. The risk of information disclosure is dramatically increased when the target site is vulnerable to XSS, because XSS can be used as a platform for CSRF, allowing the attack to operate within the bounds of the same-origin policy.</p>"
             },
             {
               "name": "Content Security Policy (CSP) Header Not Set",
@@ -6573,25 +6585,11 @@
               "desc": "<p>The integrity attribute is missing on a script or link tag served by an external server. The integrity tag prevents an attacker who have gained access to this server from injecting a malicious content. </p>"
             },
             {
-              "name": "Absence of Anti-CSRF Tokens",
-              "riskcode": "1",
-              "confidence": "2",
-              "riskdesc": "Low (Medium)",
-              "desc": "<p>No Anti-CSRF tokens were found in a HTML submission form.</p><p>A cross-site request forgery is an attack that involves forcing a victim to send an HTTP request to a target destination without their knowledge or intent in order to perform an action as the victim. The underlying cause is application functionality using predictable URL/form actions in a repeatable way. The nature of the attack is that CSRF exploits the trust that a web site has for a user. By contrast, cross-site scripting (XSS) exploits the trust that a user has for a web site. Like XSS, CSRF attacks are not necessarily cross-site, but they can be. Cross-site request forgery is also known as CSRF, XSRF, one-click attack, session riding, confused deputy, and sea surf.</p><p></p><p>CSRF attacks are effective in a number of situations, including:</p><p>    * The victim has an active session on the target site.</p><p>    * The victim is authenticated via HTTP auth on the target site.</p><p>    * The victim is on the same local network as the target site.</p><p></p><p>CSRF has primarily been used to perform an action against a target site using the victim's privileges, but recent techniques have been discovered to disclose information by gaining access to the response. The risk of information disclosure is dramatically increased when the target site is vulnerable to XSS, because XSS can be used as a platform for CSRF, allowing the attack to operate within the bounds of the same-origin policy.</p>"
-            },
-            {
               "name": "Cross-Domain JavaScript Source File Inclusion",
               "riskcode": "1",
               "confidence": "2",
               "riskdesc": "Low (Medium)",
               "desc": "<p>The page includes one or more script files from a third-party domain.</p>"
-            },
-            {
-              "name": "Incomplete or No Cache-control Header Set",
-              "riskcode": "1",
-              "confidence": "2",
-              "riskdesc": "Low (Medium)",
-              "desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content.</p>"
             },
             {
               "name": "Permissions Policy Header Not Set",
@@ -6636,6 +6634,13 @@
               "desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Ajax Spider may well be more effective than the standard one.</p>"
             },
             {
+              "name": "Re-examine Cache-control Directives",
+              "riskcode": "0",
+              "confidence": "2",
+              "riskdesc": "Informational (Medium)",
+              "desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>"
+            },
+            {
               "name": "Retrieved from Cache",
               "riskcode": "0",
               "confidence": "2",
@@ -6664,7 +6669,7 @@
     "lhr": {
       "requestedUrl": "https://beta.gouv.fr/",
       "finalUrl": "https://beta.gouv.fr/",
-      "fetchTime": "2022-03-06T01:12:01.528Z",
+      "fetchTime": "2022-03-13T01:09:35.436Z",
       "runWarnings": [],
       "categories": {
         "performance": {
@@ -6706,49 +6711,49 @@
           "description": "Collects all available metrics.",
           "score": null,
           "scoreDisplayMode": "informative",
-          "numericValue": 2433,
+          "numericValue": 2429,
           "numericUnit": "millisecond",
           "details": {
             "type": "debugdata",
             "items": [
               {
-                "firstContentfulPaint": 1813,
-                "firstMeaningfulPaint": 2433,
-                "largestContentfulPaint": 2508,
-                "firstCPUIdle": 2433,
-                "interactive": 2433,
-                "speedIndex": 1813,
+                "firstContentfulPaint": 1816,
+                "firstMeaningfulPaint": 2429,
+                "largestContentfulPaint": 2504,
+                "firstCPUIdle": 2429,
+                "interactive": 2429,
+                "speedIndex": 1816,
                 "estimatedInputLatency": 13,
-                "totalBlockingTime": 5,
-                "maxPotentialFID": 55,
+                "totalBlockingTime": 0,
+                "maxPotentialFID": 44,
                 "cumulativeLayoutShift": 0.00337646484375,
                 "cumulativeLayoutShiftAllFrames": 0,
                 "observedTimeOrigin": 0,
-                "observedTimeOriginTs": 781019971,
+                "observedTimeOriginTs": 552889252,
                 "observedNavigationStart": 0,
-                "observedNavigationStartTs": 781019971,
-                "observedFirstPaint": 223,
-                "observedFirstPaintTs": 781243022,
-                "observedFirstContentfulPaint": 223,
-                "observedFirstContentfulPaintTs": 781243022,
-                "observedFirstMeaningfulPaint": 346,
-                "observedFirstMeaningfulPaintTs": 781365685,
-                "observedLargestContentfulPaint": 346,
-                "observedLargestContentfulPaintTs": 781365685,
-                "observedTraceEnd": 1635,
-                "observedTraceEndTs": 782655123,
-                "observedLoad": 570,
-                "observedLoadTs": 781590028,
-                "observedDomContentLoaded": 305,
-                "observedDomContentLoadedTs": 781325404,
+                "observedNavigationStartTs": 552889252,
+                "observedFirstPaint": 203,
+                "observedFirstPaintTs": 553092552,
+                "observedFirstContentfulPaint": 203,
+                "observedFirstContentfulPaintTs": 553092552,
+                "observedFirstMeaningfulPaint": 351,
+                "observedFirstMeaningfulPaintTs": 553240273,
+                "observedLargestContentfulPaint": 351,
+                "observedLargestContentfulPaintTs": 553240273,
+                "observedTraceEnd": 1572,
+                "observedTraceEndTs": 554461663,
+                "observedLoad": 514,
+                "observedLoadTs": 553403633,
+                "observedDomContentLoaded": 323,
+                "observedDomContentLoadedTs": 553212198,
                 "observedCumulativeLayoutShift": 0.00337646484375,
                 "observedCumulativeLayoutShiftAllFrames": 0,
-                "observedFirstVisualChange": 232,
-                "observedFirstVisualChangeTs": 781251971,
-                "observedLastVisualChange": 348,
-                "observedLastVisualChangeTs": 781367971,
-                "observedSpeedIndex": 251,
-                "observedSpeedIndexTs": 781270748
+                "observedFirstVisualChange": 205,
+                "observedFirstVisualChangeTs": 553094252,
+                "observedLastVisualChange": 355,
+                "observedLastVisualChangeTs": 553244252,
+                "observedSpeedIndex": 229,
+                "observedSpeedIndexTs": 553118541
               },
               {
                 "lcpInvalidated": false
@@ -6770,19 +6775,19 @@
                 "numScripts": 3,
                 "numStylesheets": 1,
                 "numFonts": 3,
-                "numTasks": 606,
-                "numTasksOver10ms": 7,
+                "numTasks": 610,
+                "numTasksOver10ms": 5,
                 "numTasksOver25ms": 2,
-                "numTasksOver50ms": 0,
+                "numTasksOver50ms": 1,
                 "numTasksOver100ms": 0,
                 "numTasksOver500ms": 0,
-                "rtt": 5.486,
-                "throughput": 12360084.639670894,
-                "maxRtt": 86.43,
-                "maxServerLatency": 7.242999999999999,
-                "totalByteWeight": 217308,
-                "totalTaskTime": 344.5619999999996,
-                "mainDocumentTransferSize": 12122
+                "rtt": 5.688000000000001,
+                "throughput": 13769129.814542556,
+                "maxRtt": 87.841,
+                "maxServerLatency": 7.856,
+                "totalByteWeight": 217433,
+                "totalTaskTime": 286.05299999999875,
+                "mainDocumentTransferSize": 12219
               }
             ]
           }
@@ -6793,6 +6798,7 @@
     "stats": null,
     "trivy": null,
     "declaration-a11y": null,
+    "declaration-rgpd": null,
     "summary": {
       "404": 4,
       "httpGrade": "D",
