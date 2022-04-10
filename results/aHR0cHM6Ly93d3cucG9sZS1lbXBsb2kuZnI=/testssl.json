@@ -125,27 +125,6 @@
               "finding"      : "not offered"
           }
 ,         {
-              "id"           : "cipher_order",
-              "ip"           : "www.pole-emploi.fr/185.215.64.1",
-              "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "server"
-          }
-,         {
-              "id"           : "protocol_negotiated",
-              "ip"           : "www.pole-emploi.fr/185.215.64.1",
-              "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "Default protocol TLS1.2"
-          }
-,         {
-              "id"           : "cipher_negotiated",
-              "ip"           : "www.pole-emploi.fr/185.215.64.1",
-              "port"         : "443",
-              "severity"     : "LOW",
-              "finding"      : "ECDHE-RSA-AES128-SHA, 256 bit ECDH (P-256) (cbc)"
-          }
-,         {
               "id"           : "cipherorder_TLSv1",
               "ip"           : "www.pole-emploi.fr/185.215.64.1",
               "port"         : "443",
@@ -165,6 +144,27 @@
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "ECDHE-RSA-AES128-SHA"
+          }
+,         {
+              "id"           : "cipher_order",
+              "ip"           : "www.pole-emploi.fr/185.215.64.1",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "server"
+          }
+,         {
+              "id"           : "protocol_negotiated",
+              "ip"           : "www.pole-emploi.fr/185.215.64.1",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "Default protocol TLS1.2"
+          }
+,         {
+              "id"           : "cipher_negotiated",
+              "ip"           : "www.pole-emploi.fr/185.215.64.1",
+              "port"         : "443",
+              "severity"     : "LOW",
+              "finding"      : "ECDHE-RSA-AES128-SHA, 256 bit ECDH (P-256) (cbc)"
           }
 ,         {
               "id"           : "FS",
@@ -360,7 +360,7 @@
               "ip"           : "www.pole-emploi.fr/185.215.64.1",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "130 >= 60 days"
+              "finding"      : "95 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -1107,6 +1107,6 @@
               "ip"           : "www.pole-emploi.fr/185.215.64.1",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "118"
+              "finding"      : "179"
           }
 ]
