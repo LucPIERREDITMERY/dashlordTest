@@ -158,7 +158,7 @@
     "http": {
       "url": "https://www.fabrique.social.gouv.fr",
       "algorithm_version": 2,
-      "end_time": "Sun, 03 Apr 2022 01:00:06 GMT",
+      "end_time": "Sun, 10 Apr 2022 00:59:44 GMT",
       "grade": "B",
       "hidden": false,
       "likelihood_indicator": "MEDIUM",
@@ -166,7 +166,7 @@
         "Connection": "keep-alive",
         "Content-Encoding": "gzip",
         "Content-Type": "text/html",
-        "Date": "Sun, 03 Apr 2022 01:00:04 GMT",
+        "Date": "Sun, 10 Apr 2022 00:59:41 GMT",
         "ETag": "W/\"6242176b-6d3f\"",
         "Last-Modified": "Mon, 28 Mar 2022 20:15:39 GMT",
         "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
@@ -176,9 +176,9 @@
         "X-Frame-Options": "deny",
         "X-XSS-Protection": "1; mode=block"
       },
-      "scan_id": 25567586,
+      "scan_id": 25708495,
       "score": 75,
-      "start_time": "Sun, 03 Apr 2022 01:00:01 GMT",
+      "start_time": "Sun, 10 Apr 2022 00:59:09 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 1,
@@ -725,7 +725,7 @@
         "ip": "www.fabrique.social.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "OK",
-        "finding": "46 >= 30 days"
+        "finding": "39 >= 30 days"
       },
       {
         "id": "cert_notBefore",
@@ -928,7 +928,7 @@
         "ip": "www.fabrique.social.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "INFO",
-        "finding": "1648948926"
+        "finding": "1649553807"
       },
       {
         "id": "HSTS_time",
@@ -1512,7 +1512,7 @@
         "ip": "www.fabrique.social.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "INFO",
-        "finding": "137"
+        "finding": "135"
       }
     ],
     "thirdparties": {
@@ -1523,7 +1523,7 @@
           "value": "1",
           "domain": "www.fabrique.social.gouv.fr",
           "path": "/",
-          "expires": 1648950665,
+          "expires": 1649555548,
           "size": 15,
           "httpOnly": false,
           "secure": false,
@@ -1535,10 +1535,10 @@
         },
         {
           "name": "_pk_id.2.6321",
-          "value": "e31da559e23aebab.1648948866.",
+          "value": "a9b1dced14967e16.1649553749.",
           "domain": "www.fabrique.social.gouv.fr",
           "path": "/",
-          "expires": 1682904066,
+          "expires": 1683508949,
           "size": 41,
           "httpOnly": false,
           "secure": false,
@@ -1550,7 +1550,7 @@
         }
       ],
       "headers": {
-        "date": "Sun, 03 Apr 2022 01:21:03 GMT",
+        "date": "Sun, 10 Apr 2022 01:22:27 GMT",
         "content-type": "text/html",
         "last-modified": "Mon, 28 Mar 2022 20:15:39 GMT",
         "vary": "Accept-Encoding",
@@ -1678,16 +1678,19 @@
         "https://www.fabrique.social.gouv.fr/startups/work-in-france/": {
           "status": 200
         },
-        "https://www.fabrique.social.gouv.fr/startups/work-in-france": {
-          "status": 200
-        },
-        "https://www.fabrique.social.gouv.fr/actus/board-janvier-2019": {
-          "status": 200
-        },
         "https://www.fabrique.social.gouv.fr/startups/tumeplay/": {
           "status": 200
         },
+        "https://www.fabrique.social.gouv.fr/startups/work-in-france": {
+          "status": 200
+        },
         "https://www.fabrique.social.gouv.fr/startups/code-du-travail-numerique/": {
+          "status": 200
+        },
+        "https://www.fabrique.social.gouv.fr/faq/": {
+          "status": 200
+        },
+        "https://www.fabrique.social.gouv.fr/actus/board-janvier-2019": {
           "status": 200
         },
         "https://www.fabrique.social.gouv.fr/actus/saison2": {
@@ -1864,7 +1867,7 @@
     },
     "zap": {
       "@version": "2.11.1",
-      "@generated": "Sun, 3 Apr 2022 01:20:21",
+      "@generated": "Sun, 10 Apr 2022 01:21:50",
       "site": [
         {
           "@name": "https://www.fabrique.social.gouv.fr",
@@ -1943,7 +1946,7 @@
     "lhr": {
       "requestedUrl": "https://www.fabrique.social.gouv.fr/",
       "finalUrl": "https://www.fabrique.social.gouv.fr/",
-      "fetchTime": "2022-04-03T01:20:30.342Z",
+      "fetchTime": "2022-04-10T01:21:59.003Z",
       "runWarnings": [],
       "categories": {
         "performance": {
@@ -1985,49 +1988,49 @@
           "description": "Collects all available metrics.",
           "score": null,
           "scoreDisplayMode": "informative",
-          "numericValue": 4777,
+          "numericValue": 4315,
           "numericUnit": "millisecond",
           "details": {
             "type": "debugdata",
             "items": [
               {
-                "firstContentfulPaint": 1314,
-                "firstMeaningfulPaint": 1314,
-                "largestContentfulPaint": 2918,
-                "firstCPUIdle": 4117,
-                "interactive": 4777,
-                "speedIndex": 2313,
-                "estimatedInputLatency": 20,
-                "totalBlockingTime": 276,
-                "maxPotentialFID": 296,
+                "firstContentfulPaint": 1171,
+                "firstMeaningfulPaint": 1171,
+                "largestContentfulPaint": 2649,
+                "firstCPUIdle": 3594,
+                "interactive": 4315,
+                "speedIndex": 1995,
+                "estimatedInputLatency": 13,
+                "totalBlockingTime": 169,
+                "maxPotentialFID": 203,
                 "cumulativeLayoutShift": 0.000828776741532922,
                 "cumulativeLayoutShiftAllFrames": 0.000828776741532922,
                 "observedTimeOrigin": 0,
-                "observedTimeOriginTs": 482787384,
+                "observedTimeOriginTs": 250035784,
                 "observedNavigationStart": 0,
-                "observedNavigationStartTs": 482787384,
-                "observedFirstPaint": 685,
-                "observedFirstPaintTs": 483472131,
-                "observedFirstContentfulPaint": 685,
-                "observedFirstContentfulPaintTs": 483472131,
-                "observedFirstMeaningfulPaint": 1332,
-                "observedFirstMeaningfulPaintTs": 484119205,
-                "observedLargestContentfulPaint": 1332,
-                "observedLargestContentfulPaintTs": 484119205,
-                "observedTraceEnd": 3715,
-                "observedTraceEndTs": 486502751,
-                "observedLoad": 2657,
-                "observedLoadTs": 485444486,
-                "observedDomContentLoaded": 1383,
-                "observedDomContentLoadedTs": 484170018,
+                "observedNavigationStartTs": 250035784,
+                "observedFirstPaint": 551,
+                "observedFirstPaintTs": 250587183,
+                "observedFirstContentfulPaint": 551,
+                "observedFirstContentfulPaintTs": 250587183,
+                "observedFirstMeaningfulPaint": 1016,
+                "observedFirstMeaningfulPaintTs": 251051505,
+                "observedLargestContentfulPaint": 1133,
+                "observedLargestContentfulPaintTs": 251168934,
+                "observedTraceEnd": 2987,
+                "observedTraceEndTs": 253023212,
+                "observedLoad": 1923,
+                "observedLoadTs": 251958452,
+                "observedDomContentLoaded": 1162,
+                "observedDomContentLoadedTs": 251197624,
                 "observedCumulativeLayoutShift": 0.000828776741532922,
                 "observedCumulativeLayoutShiftAllFrames": 0.000828776741532922,
-                "observedFirstVisualChange": 693,
-                "observedFirstVisualChangeTs": 483480384,
-                "observedLastVisualChange": 3359,
-                "observedLastVisualChangeTs": 486146384,
-                "observedSpeedIndex": 1221,
-                "observedSpeedIndexTs": 484007972
+                "observedFirstVisualChange": 554,
+                "observedFirstVisualChangeTs": 250589784,
+                "observedLastVisualChange": 2987,
+                "observedLastVisualChangeTs": 253022784,
+                "observedSpeedIndex": 1060,
+                "observedSpeedIndexTs": 251095456
               },
               {
                 "lcpInvalidated": false
@@ -2049,18 +2052,18 @@
                 "numScripts": 15,
                 "numStylesheets": 1,
                 "numFonts": 3,
-                "numTasks": 1330,
+                "numTasks": 1378,
                 "numTasksOver10ms": 8,
-                "numTasksOver25ms": 3,
+                "numTasksOver25ms": 2,
                 "numTasksOver50ms": 1,
                 "numTasksOver100ms": 0,
                 "numTasksOver500ms": 0,
-                "rtt": 139.89700000000002,
-                "throughput": 42378717.30073324,
-                "maxRtt": 149.633,
-                "maxServerLatency": 221.605,
-                "totalByteWeight": 7755835,
-                "totalTaskTime": 653.9089999999989,
+                "rtt": 116.088,
+                "throughput": 50466136.30392806,
+                "maxRtt": 122.647,
+                "maxServerLatency": 120.88400000000001,
+                "totalByteWeight": 7755844,
+                "totalTaskTime": 536.0639999999987,
                 "mainDocumentTransferSize": 7938
               }
             ]
@@ -2104,23 +2107,23 @@
     "http": {
       "url": "https://www.pole-emploi.fr",
       "algorithm_version": 2,
-      "end_time": "Sun, 06 Mar 2022 01:06:53 GMT",
+      "end_time": "Sun, 10 Apr 2022 01:22:37 GMT",
       "grade": "F",
       "hidden": false,
       "likelihood_indicator": "MEDIUM",
       "response_headers": {
         "Accept-Ranges": "bytes",
-        "Age": "6660",
+        "Age": "1786",
         "Connection": "Keep-Alive",
         "Content-Encoding": "gzip",
-        "Content-Length": "50329",
+        "Content-Length": "48902",
         "Content-Type": "text/html; charset=utf-8",
-        "Date": "Sun, 06 Mar 2022 01:06:51 GMT",
+        "Date": "Sun, 10 Apr 2022 01:22:35 GMT",
         "Vary": "Accept-Encoding"
       },
-      "scan_id": 24940121,
+      "scan_id": 25708921,
       "score": 20,
-      "start_time": "Sun, 06 Mar 2022 01:06:47 GMT",
+      "start_time": "Sun, 10 Apr 2022 01:22:31 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 5,
@@ -2460,27 +2463,6 @@
         "finding": "not offered"
       },
       {
-        "id": "cipher_order",
-        "ip": "www.pole-emploi.fr/185.215.64.1",
-        "port": "443",
-        "severity": "OK",
-        "finding": "server"
-      },
-      {
-        "id": "protocol_negotiated",
-        "ip": "www.pole-emploi.fr/185.215.64.1",
-        "port": "443",
-        "severity": "OK",
-        "finding": "Default protocol TLS1.2"
-      },
-      {
-        "id": "cipher_negotiated",
-        "ip": "www.pole-emploi.fr/185.215.64.1",
-        "port": "443",
-        "severity": "LOW",
-        "finding": "ECDHE-RSA-AES128-SHA, 256 bit ECDH (P-256) (cbc)"
-      },
-      {
         "id": "cipherorder_TLSv1",
         "ip": "www.pole-emploi.fr/185.215.64.1",
         "port": "443",
@@ -2500,6 +2482,27 @@
         "port": "443",
         "severity": "INFO",
         "finding": "ECDHE-RSA-AES128-SHA"
+      },
+      {
+        "id": "cipher_order",
+        "ip": "www.pole-emploi.fr/185.215.64.1",
+        "port": "443",
+        "severity": "OK",
+        "finding": "server"
+      },
+      {
+        "id": "protocol_negotiated",
+        "ip": "www.pole-emploi.fr/185.215.64.1",
+        "port": "443",
+        "severity": "OK",
+        "finding": "Default protocol TLS1.2"
+      },
+      {
+        "id": "cipher_negotiated",
+        "ip": "www.pole-emploi.fr/185.215.64.1",
+        "port": "443",
+        "severity": "LOW",
+        "finding": "ECDHE-RSA-AES128-SHA, 256 bit ECDH (P-256) (cbc)"
       },
       {
         "id": "FS",
@@ -2695,7 +2698,7 @@
         "ip": "www.pole-emploi.fr/185.215.64.1",
         "port": "443",
         "severity": "OK",
-        "finding": "130 >= 60 days"
+        "finding": "95 >= 60 days"
       },
       {
         "id": "cert_notBefore",
@@ -3442,7 +3445,7 @@
         "ip": "www.pole-emploi.fr/185.215.64.1",
         "port": "443",
         "severity": "INFO",
-        "finding": "118"
+        "finding": "179"
       }
     ],
     "thirdparties": {
@@ -3469,15 +3472,15 @@
         },
         {
           "type": "unknown",
-          "url": "https://hd.pe.fr/hit.xiti?s=475540&idclient=6a5d8157-889f-403f-83a8-c3d92fd16756&ts=1646528846306&page_url=https://www.pole-emploi.fr/accueil/&vtag=5.29.2&ptag=js&r=800x600x24x24&re=800x600&hl=1x7x26&lng=en-US&p=RGPD_Popin::Bandeau::Vu&s2=%20&click=N&pclick=Accueil_Pole_emploi_RUB153&s2click=1"
+          "url": "https://hd.pe.fr/hit.xiti?s=475540&idclient=51e12c5e-387a-4ec6-a36c-773c7e40afe2&ts=1649553787497&page_url=https://www.pole-emploi.fr/accueil/&vtag=5.29.2&ptag=js&r=800x600x24x24&re=800x600&hl=1x23x7&lng=en-US&p=RGPD_Popin::Bandeau::Vu&s2=%20&click=N&pclick=Accueil_Pole_emploi_RUB153&s2click=1"
         },
         {
           "type": "unknown",
-          "url": "https://hd.pe.fr/hit.xiti?s=475540&idclient=6a5d8157-889f-403f-83a8-c3d92fd16756&ts=1646528846303&page_url=https://www.pole-emploi.fr/accueil/&vtag=5.29.2&ptag=js&r=800x600x24x24&re=800x600&hl=1x7x26&lng=en-US&idp=0107262132292&jv=0&p=Accueil_Pole_emploi_RUB153&s2=1&x1=Angular&x2=Transverse&x3=0&x4=&x5=&x6=&x7=&x8=&x9=PO014&ref="
+          "url": "https://hd.pe.fr/hit.xiti?s=475540&idclient=51e12c5e-387a-4ec6-a36c-773c7e40afe2&ts=1649553787494&page_url=https://www.pole-emploi.fr/accueil/&vtag=5.29.2&ptag=js&r=800x600x24x24&re=800x600&hl=1x23x7&lng=en-US&idp=0123075387523&jv=0&p=Accueil_Pole_emploi_RUB153&s2=1&x1=Angular&x2=Transverse&x3=0&x4=&x5=&x6=&x7=&x8=&x9=PO014&ref="
         },
         {
           "type": "unknown",
-          "url": "https://hd.pe.fr/hit.xiti?s=475540&idclient=6a5d8157-889f-403f-83a8-c3d92fd16756&ts=1646528846305&page_url=https://www.pole-emploi.fr/accueil/&vtag=5.29.2&ptag=js&r=800x600x24x24&re=800x600&hl=1x7x26&lng=en-US&ati=PUB-[Accueil_Pole_emploi_RUB153]-[Ensemble_protegeons_nous_Le_port_du_masque_est_obligatoire_dans_les_agences_Pole_emploi]-[https_www_gouvernement_fr_info-coronavirus_masques-grand-public]-[masques-grand-public]----&type=AT"
+          "url": "https://hd.pe.fr/hit.xiti?s=475540&idclient=51e12c5e-387a-4ec6-a36c-773c7e40afe2&ts=1649553787496&page_url=https://www.pole-emploi.fr/accueil/&vtag=5.29.2&ptag=js&r=800x600x24x24&re=800x600&hl=1x23x7&lng=en-US&ati=PUB-[Accueil_Pole_emploi_RUB153]-[Carrefour_recrute_en_alternance]-[https_recrute_carrefour_fr_article_emploi-formation]-[emploi-formation]----&type=AT"
         },
         {
           "type": "unknown",
@@ -3486,11 +3489,25 @@
       ],
       "cookies": [
         {
-          "name": "atuserid",
-          "value": "%7B%22name%22%3A%22atuserid%22%2C%22val%22%3A%226a5d8157-889f-403f-83a8-c3d92fd16756%22%2C%22options%22%3A%7B%22end%22%3A%222023-04-07T01%3A07%3A26.286Z%22%2C%22path%22%3A%22%2F%22%7D%7D",
+          "name": "atidvisitor",
+          "value": "%7B%22name%22%3A%22atidvisitor%22%2C%22val%22%3A%7B%22vrn%22%3A%22-475540-%22%7D%2C%22options%22%3A%7B%22path%22%3A%22%2F%22%2C%22session%22%3A15724800%2C%22end%22%3A15724800%7D%7D",
           "domain": ".pole-emploi.fr",
           "path": "/",
-          "expires": 1680829646,
+          "expires": 1665278587.490044,
+          "size": 191,
+          "httpOnly": false,
+          "secure": true,
+          "session": false,
+          "sameParty": false,
+          "sourceScheme": "Secure",
+          "sourcePort": 443
+        },
+        {
+          "name": "atuserid",
+          "value": "%7B%22name%22%3A%22atuserid%22%2C%22val%22%3A%2251e12c5e-387a-4ec6-a36c-773c7e40afe2%22%2C%22options%22%3A%7B%22end%22%3A%222023-05-12T01%3A23%3A07.482Z%22%2C%22path%22%3A%22%2F%22%7D%7D",
+          "domain": ".pole-emploi.fr",
+          "path": "/",
+          "expires": 1683854587,
           "size": 194,
           "httpOnly": false,
           "secure": true,
@@ -3501,43 +3518,14 @@
         },
         {
           "name": "TCPID",
-          "value": "1223017263896128055",
+          "value": "12240123711055442188",
           "domain": ".pole-emploi.fr",
           "path": "/",
-          "expires": 1680484046,
-          "size": 24,
+          "expires": 1683508987,
+          "size": 25,
           "httpOnly": false,
           "secure": false,
           "session": false,
-          "sameSite": "Lax",
-          "sameParty": false,
-          "sourceScheme": "Secure",
-          "sourcePort": 443
-        },
-        {
-          "name": "atidvisitor",
-          "value": "%7B%22name%22%3A%22atidvisitor%22%2C%22val%22%3A%7B%22vrn%22%3A%22-475540-%22%7D%2C%22options%22%3A%7B%22path%22%3A%22%2F%22%2C%22session%22%3A15724800%2C%22end%22%3A15724800%7D%7D",
-          "domain": ".pole-emploi.fr",
-          "path": "/",
-          "expires": 1662253646.294322,
-          "size": 191,
-          "httpOnly": false,
-          "secure": true,
-          "session": false,
-          "sameParty": false,
-          "sourceScheme": "Secure",
-          "sourcePort": 443
-        },
-        {
-          "name": "popinMep",
-          "value": "1",
-          "domain": "www.pole-emploi.fr",
-          "path": "/accueil",
-          "expires": -1,
-          "size": 9,
-          "httpOnly": false,
-          "secure": false,
-          "session": true,
           "sameSite": "Lax",
           "sameParty": false,
           "sourceScheme": "Secure",
@@ -3550,9 +3538,9 @@
         "content-encoding": "gzip",
         "accept-ranges": "bytes",
         "connection": "Keep-Alive",
-        "date": "Sun, 06 Mar 2022 01:07:24 GMT",
-        "age": "6693",
-        "content-length": "50329"
+        "date": "Sun, 10 Apr 2022 01:23:05 GMT",
+        "age": "1816",
+        "content-length": "48902"
       },
       "endpoints": [
         {
@@ -3589,7 +3577,7 @@
               }
             },
             "location": {
-              "accuracy_radius": 1000,
+              "accuracy_radius": 200,
               "latitude": 48.8582,
               "longitude": 2.3387,
               "time_zone": "Europe/Paris"
@@ -3713,7 +3701,7 @@
               }
             },
             "location": {
-              "accuracy_radius": 1000,
+              "accuracy_radius": 200,
               "latitude": 48.8582,
               "longitude": 2.3387,
               "time_zone": "Europe/Paris"
@@ -3737,7 +3725,7 @@
         },
         {
           "hostname": "tag.aticdn.net",
-          "ip": "99.84.125.67",
+          "ip": "13.226.230.101",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -3859,7 +3847,7 @@
         },
         {
           "hostname": "privacy.trustcommander.net",
-          "ip": "13.38.142.41",
+          "ip": "13.37.172.35",
           "geoip": {
             "city": {
               "geoname_id": 2988507,
@@ -3953,7 +3941,7 @@
         },
         {
           "hostname": "hd.pe.fr",
-          "ip": "52.85.151.77",
+          "ip": "13.35.95.100",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -4018,19 +4006,19 @@
         "https://www.pole-emploi.fr/informations/informations-legales-et-conditio/cookies.html": {
           "status": 200
         },
+        "https://www.pole-emploi.fr/actualites/semaine-des-metiers-du--soin-et.html": {
+          "status": 200
+        },
         "https://www.pole-emploi.fr/candidat/vos-services-en-ligne/des-partenaires-pour-vous-propos.html": {
+          "status": 200
+        },
+        "https://www.pole-emploi.fr/candidat/": {
           "status": 200
         },
         "https://www.pole-emploi.fr/candidat/mes-droits-aux-aides-et-allocati.html": {
           "status": 200
         },
         "https://www.pole-emploi.fr/candidat/vos-services-en-ligne.html": {
-          "status": 200
-        },
-        "https://www.pole-emploi.fr/candidat/": {
-          "status": 200
-        },
-        "https://www.pole-emploi.fr/candidat/pole-emploi-et-vous/le-role-du-conseiller.html": {
           "status": 200
         },
         "https://www.pole-emploi.fr/candidat/vos-droits-et-demarches.html": {
@@ -4045,13 +4033,13 @@
         "https://www.pole-emploi.fr/candidat/votre-projet-professionnel.html": {
           "status": 200
         },
+        "https://www.pole-emploi.fr/candidat/pole-emploi-et-vous/le-role-du-conseiller.html": {
+          "status": 200
+        },
         "https://www.pole-emploi.fr/monParcoursInfo/": {
           "status": 200
         },
         "https://www.pole-emploi.fr/candidat/decouvrir-le-marche-du-travail.html": {
-          "status": 200
-        },
-        "https://www.pole-emploi.fr/candidat/en-formation.html": {
           "status": 200
         }
       },
@@ -4170,6 +4158,22 @@
               "id": 12,
               "slug": "javascript-frameworks",
               "name": "JavaScript frameworks"
+            }
+          ]
+        },
+        {
+          "slug": "owl-carousel",
+          "name": "OWL Carousel",
+          "confidence": 100,
+          "version": null,
+          "icon": "OWL Carousel.png",
+          "website": "https://owlcarousel2.github.io/OwlCarousel2/",
+          "cpe": null,
+          "categories": [
+            {
+              "id": 59,
+              "slug": "javascript-libraries",
+              "name": "JavaScript libraries"
             }
           ]
         },
@@ -4294,7 +4298,7 @@
     },
     "zap": {
       "@version": "2.11.1",
-      "@generated": "Sun, 6 Mar 2022 01:06:24",
+      "@generated": "Sun, 10 Apr 2022 01:22:08",
       "site": [
         {
           "@name": "https://www.pole-emploi.fr",
@@ -4302,6 +4306,13 @@
           "@port": "443",
           "@ssl": "true",
           "alerts": [
+            {
+              "name": "Absence of Anti-CSRF Tokens",
+              "riskcode": "2",
+              "confidence": "1",
+              "riskdesc": "Medium (Low)",
+              "desc": "<p>No Anti-CSRF tokens were found in a HTML submission form.</p><p>A cross-site request forgery is an attack that involves forcing a victim to send an HTTP request to a target destination without their knowledge or intent in order to perform an action as the victim. The underlying cause is application functionality using predictable URL/form actions in a repeatable way. The nature of the attack is that CSRF exploits the trust that a web site has for a user. By contrast, cross-site scripting (XSS) exploits the trust that a user has for a web site. Like XSS, CSRF attacks are not necessarily cross-site, but they can be. Cross-site request forgery is also known as CSRF, XSRF, one-click attack, session riding, confused deputy, and sea surf.</p><p></p><p>CSRF attacks are effective in a number of situations, including:</p><p>    * The victim has an active session on the target site.</p><p>    * The victim is authenticated via HTTP auth on the target site.</p><p>    * The victim is on the same local network as the target site.</p><p></p><p>CSRF has primarily been used to perform an action against a target site using the victim's privileges, but recent techniques have been discovered to disclose information by gaining access to the response. The risk of information disclosure is dramatically increased when the target site is vulnerable to XSS, because XSS can be used as a platform for CSRF, allowing the attack to operate within the bounds of the same-origin policy.</p>"
+            },
             {
               "name": "Application Error Disclosure",
               "riskcode": "2",
@@ -4331,13 +4342,6 @@
               "desc": "<p>The integrity attribute is missing on a script or link tag served by an external server. The integrity tag prevents an attacker who have gained access to this server from injecting a malicious content. </p>"
             },
             {
-              "name": "Absence of Anti-CSRF Tokens",
-              "riskcode": "1",
-              "confidence": "2",
-              "riskdesc": "Low (Medium)",
-              "desc": "<p>No Anti-CSRF tokens were found in a HTML submission form.</p><p>A cross-site request forgery is an attack that involves forcing a victim to send an HTTP request to a target destination without their knowledge or intent in order to perform an action as the victim. The underlying cause is application functionality using predictable URL/form actions in a repeatable way. The nature of the attack is that CSRF exploits the trust that a web site has for a user. By contrast, cross-site scripting (XSS) exploits the trust that a user has for a web site. Like XSS, CSRF attacks are not necessarily cross-site, but they can be. Cross-site request forgery is also known as CSRF, XSRF, one-click attack, session riding, confused deputy, and sea surf.</p><p></p><p>CSRF attacks are effective in a number of situations, including:</p><p>    * The victim has an active session on the target site.</p><p>    * The victim is authenticated via HTTP auth on the target site.</p><p>    * The victim is on the same local network as the target site.</p><p></p><p>CSRF has primarily been used to perform an action against a target site using the victim's privileges, but recent techniques have been discovered to disclose information by gaining access to the response. The risk of information disclosure is dramatically increased when the target site is vulnerable to XSS, because XSS can be used as a platform for CSRF, allowing the attack to operate within the bounds of the same-origin policy.</p>"
-            },
-            {
               "name": "Cookie Without Secure Flag",
               "riskcode": "1",
               "confidence": "2",
@@ -4364,13 +4368,6 @@
               "confidence": "1",
               "riskdesc": "Low (Low)",
               "desc": "<p>A dangerous JS function seems to be in use that would leave the site vulnerable.</p>"
-            },
-            {
-              "name": "Incomplete or No Cache-control Header Set",
-              "riskcode": "1",
-              "confidence": "2",
-              "riskdesc": "Low (Medium)",
-              "desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content.</p>"
             },
             {
               "name": "Permissions Policy Header Not Set",
@@ -4429,6 +4426,13 @@
               "desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Ajax Spider may well be more effective than the standard one.</p>"
             },
             {
+              "name": "Re-examine Cache-control Directives",
+              "riskcode": "0",
+              "confidence": "2",
+              "riskdesc": "Informational (Medium)",
+              "desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>"
+            },
+            {
               "name": "Retrieved from Cache",
               "riskcode": "0",
               "confidence": "2",
@@ -4450,7 +4454,7 @@
     "lhr": {
       "requestedUrl": "https://www.pole-emploi.fr/",
       "finalUrl": "https://www.pole-emploi.fr/accueil/",
-      "fetchTime": "2022-03-06T01:06:33.432Z",
+      "fetchTime": "2022-04-10T01:22:17.192Z",
       "runWarnings": [
         "The page may not be loading as expected because your test URL (https://www.pole-emploi.fr/) was redirected to https://www.pole-emploi.fr/accueil/. Try testing the second URL directly."
       ],
@@ -4458,14 +4462,14 @@
         "performance": {
           "title": "Performance",
           "id": "performance",
-          "score": 0.7731657028198242
+          "score": 0.7611520767211915
         },
         "accessibility": {
           "title": "Accessibility",
           "description": "These checks highlight opportunities to [improve the accessibility of your web app](https://developers.google.com/web/fundamentals/accessibility). Only a subset of accessibility issues can be automatically detected so manual testing is also encouraged.",
           "manualDescription": "These items address areas which an automated testing tool cannot cover. Learn more in our guide on [conducting an accessibility review](https://developers.google.com/web/fundamentals/accessibility/how-to-review).",
           "id": "accessibility",
-          "score": 0.98
+          "score": 0.92
         },
         "best-practices": {
           "title": "Best Practices",
@@ -4477,7 +4481,7 @@
           "description": "These checks ensure that your page is optimized for search engine results ranking. There are additional factors Lighthouse does not check that may affect your search ranking. [Learn more](https://support.google.com/webmasters/answer/35769).",
           "manualDescription": "Run these additional validators on your site to check additional SEO best practices.",
           "id": "seo",
-          "score": 0.86
+          "score": 0.87
         },
         "pwa": {
           "title": "Progressive Web App",
@@ -4494,49 +4498,49 @@
           "description": "Collects all available metrics.",
           "score": null,
           "scoreDisplayMode": "informative",
-          "numericValue": 12166,
+          "numericValue": 10641,
           "numericUnit": "millisecond",
           "details": {
             "type": "debugdata",
             "items": [
               {
-                "firstContentfulPaint": 2466,
-                "firstMeaningfulPaint": 2466,
-                "largestContentfulPaint": 6196,
-                "firstCPUIdle": 2466,
-                "interactive": 12166,
-                "speedIndex": 5709,
-                "estimatedInputLatency": 36,
-                "totalBlockingTime": 218,
-                "maxPotentialFID": 408,
-                "cumulativeLayoutShift": 0.004833144611782498,
-                "cumulativeLayoutShiftAllFrames": 0.004471702045864529,
+                "firstContentfulPaint": 2655,
+                "firstMeaningfulPaint": 2655,
+                "largestContentfulPaint": 6065,
+                "firstCPUIdle": 2655,
+                "interactive": 10641,
+                "speedIndex": 6374,
+                "estimatedInputLatency": 13,
+                "totalBlockingTime": 125,
+                "maxPotentialFID": 282,
+                "cumulativeLayoutShift": 0.008071463055080837,
+                "cumulativeLayoutShiftAllFrames": 0.006968340343899196,
                 "observedTimeOrigin": 0,
-                "observedTimeOriginTs": 256931198,
+                "observedTimeOriginTs": 420529262,
                 "observedNavigationStart": 0,
-                "observedNavigationStartTs": 256931198,
-                "observedFirstPaint": 846,
-                "observedFirstPaintTs": 257777225,
-                "observedFirstContentfulPaint": 846,
-                "observedFirstContentfulPaintTs": 257777225,
-                "observedFirstMeaningfulPaint": 846,
-                "observedFirstMeaningfulPaintTs": 257777225,
-                "observedLargestContentfulPaint": 1196,
-                "observedLargestContentfulPaintTs": 258127247,
-                "observedTraceEnd": 3943,
-                "observedTraceEndTs": 260874536,
-                "observedLoad": 2883,
-                "observedLoadTs": 259813732,
-                "observedDomContentLoaded": 2158,
-                "observedDomContentLoadedTs": 259089550,
-                "observedCumulativeLayoutShift": 0.004833144611782498,
-                "observedCumulativeLayoutShiftAllFrames": 0.004471702045864529,
-                "observedFirstVisualChange": 858,
-                "observedFirstVisualChangeTs": 257789198,
-                "observedLastVisualChange": 3591,
-                "observedLastVisualChangeTs": 260522198,
-                "observedSpeedIndex": 1496,
-                "observedSpeedIndexTs": 258427163
+                "observedNavigationStartTs": 420529262,
+                "observedFirstPaint": 1091,
+                "observedFirstPaintTs": 421620156,
+                "observedFirstContentfulPaint": 1091,
+                "observedFirstContentfulPaintTs": 421620156,
+                "observedFirstMeaningfulPaint": 1091,
+                "observedFirstMeaningfulPaintTs": 421620156,
+                "observedLargestContentfulPaint": 1441,
+                "observedLargestContentfulPaintTs": 421970102,
+                "observedTraceEnd": 4554,
+                "observedTraceEndTs": 425082996,
+                "observedLoad": 3495,
+                "observedLoadTs": 424023836,
+                "observedDomContentLoaded": 2745,
+                "observedDomContentLoadedTs": 423274295,
+                "observedCumulativeLayoutShift": 0.008071463055080837,
+                "observedCumulativeLayoutShiftAllFrames": 0.006968340343899196,
+                "observedFirstVisualChange": 1120,
+                "observedFirstVisualChangeTs": 421649262,
+                "observedLastVisualChange": 4553,
+                "observedLastVisualChangeTs": 425082262,
+                "observedSpeedIndex": 1570,
+                "observedSpeedIndexTs": 422099449
               },
               {
                 "lcpInvalidated": false
@@ -4554,23 +4558,23 @@
             "type": "debugdata",
             "items": [
               {
-                "numRequests": 43,
+                "numRequests": 42,
                 "numScripts": 8,
                 "numStylesheets": 1,
-                "numFonts": 7,
-                "numTasks": 1196,
-                "numTasksOver10ms": 11,
-                "numTasksOver25ms": 4,
+                "numFonts": 6,
+                "numTasks": 1412,
+                "numTasksOver10ms": 9,
+                "numTasksOver25ms": 2,
                 "numTasksOver50ms": 2,
                 "numTasksOver100ms": 1,
                 "numTasksOver500ms": 0,
-                "rtt": 5.366,
-                "throughput": 15169254.104438405,
-                "maxRtt": 97.287,
-                "maxServerLatency": 12.781000000000006,
-                "totalByteWeight": 2237841,
-                "totalTaskTime": 953.0389999999973,
-                "mainDocumentTransferSize": 50560
+                "rtt": 9.671999999999997,
+                "throughput": 10656896.134440823,
+                "maxRtt": 123.099,
+                "maxServerLatency": 202.40099999999998,
+                "totalByteWeight": 2300827,
+                "totalTaskTime": 832.4389999999995,
+                "mainDocumentTransferSize": 49133
               }
             ]
           }
@@ -4592,16 +4596,16 @@
       "testsslExpireDate": "2022-07-14T07:44:00.000Z",
       "testsslGrade": "B",
       "cookiesGrade": "C",
-      "cookiesCount": 4,
+      "cookiesCount": 3,
       "trackersGrade": "C",
       "trackersCount": 9,
-      "lighthouse_performance": 0.7731657028198242,
+      "lighthouse_performance": 0.7611520767211915,
       "lighthouse_performanceGrade": "B",
-      "lighthouse_accessibility": 0.98,
+      "lighthouse_accessibility": 0.92,
       "lighthouse_accessibilityGrade": "A",
       "lighthouse_best-practices": 0.87,
       "lighthouse_best-practicesGrade": "A",
-      "lighthouse_seo": 0.86,
+      "lighthouse_seo": 0.87,
       "lighthouse_seoGrade": "A",
       "lighthouse_pwa": 0.67,
       "lighthouse_pwaGrade": "B"
@@ -4747,7 +4751,7 @@
     "http": {
       "url": "https://beta.gouv.fr",
       "algorithm_version": 2,
-      "end_time": "Sun, 03 Apr 2022 01:11:07 GMT",
+      "end_time": "Sun, 10 Apr 2022 01:10:07 GMT",
       "grade": "D+",
       "hidden": false,
       "likelihood_indicator": "MEDIUM",
@@ -4755,17 +4759,17 @@
         "Connection": "keep-alive",
         "Content-Encoding": "gzip",
         "Content-Type": "text/html",
-        "Date": "Sun, 03 Apr 2022 01:11:06 GMT",
-        "ETag": "W/\"624844a0-d087\"",
-        "Last-Modified": "Sat, 02 Apr 2022 12:42:08 GMT",
+        "Date": "Sun, 10 Apr 2022 01:10:06 GMT",
+        "ETag": "W/\"625064ac-d248\"",
+        "Last-Modified": "Fri, 08 Apr 2022 16:37:00 GMT",
         "Server": "openresty",
         "Strict-Transport-Security": "max-age=31536000",
         "Transfer-Encoding": "chunked",
-        "X-Request-ID": "169377ec-efab-45ff-8701-fe9682f00b4a"
+        "X-Request-ID": "1cee4c6f-19e5-45fe-bf9a-270ccef3ad22"
       },
-      "scan_id": 25568027,
+      "scan_id": 25708845,
       "score": 40,
-      "start_time": "Sun, 03 Apr 2022 01:11:03 GMT",
+      "start_time": "Sun, 10 Apr 2022 01:10:03 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 4,
@@ -5165,7 +5169,7 @@
         "ip": "beta.gouv.fr/109.232.236.90",
         "port": "443",
         "severity": "INFO",
-        "finding": "supported"
+        "finding": "not supported"
       },
       {
         "id": "sessionresumption_ID",
@@ -5312,7 +5316,7 @@
         "ip": "beta.gouv.fr/109.232.236.90",
         "port": "443",
         "severity": "OK",
-        "finding": "86 >= 30 days"
+        "finding": "79 >= 30 days"
       },
       {
         "id": "cert_notBefore",
@@ -5515,7 +5519,7 @@
         "ip": "beta.gouv.fr/109.232.236.90",
         "port": "443",
         "severity": "INFO",
-        "finding": "1648949431"
+        "finding": "1649554494"
       },
       {
         "id": "HSTS_time",
@@ -6434,7 +6438,7 @@
         "ip": "beta.gouv.fr/5.104.101.30",
         "port": "443",
         "severity": "OK",
-        "finding": "86 >= 30 days"
+        "finding": "79 >= 30 days"
       },
       {
         "id": "cert_notBefore",
@@ -6637,7 +6641,7 @@
         "ip": "beta.gouv.fr/5.104.101.30",
         "port": "443",
         "severity": "INFO",
-        "finding": "1648949526"
+        "finding": "1649554633"
       },
       {
         "id": "HSTS_time",
@@ -7207,7 +7211,7 @@
         "ip": "beta.gouv.fr/5.104.101.30",
         "port": "443",
         "severity": "INFO",
-        "finding": "195"
+        "finding": "282"
       }
     ],
     "thirdparties": {
@@ -7218,7 +7222,7 @@
           "value": "1",
           "domain": "beta.gouv.fr",
           "path": "/",
-          "expires": 1648951165,
+          "expires": 1649556223,
           "size": 16,
           "httpOnly": false,
           "secure": false,
@@ -7230,10 +7234,10 @@
         },
         {
           "name": "_pk_id.21.968e",
-          "value": "efb4e2a49f68f770.1648949366.",
+          "value": "d51ef1dff9f461fa.1649554423.",
           "domain": "beta.gouv.fr",
           "path": "/",
-          "expires": 1682904566,
+          "expires": 1683509623,
           "size": 42,
           "httpOnly": false,
           "secure": false,
@@ -7246,12 +7250,12 @@
       ],
       "headers": {
         "server": "openresty",
-        "date": "Sun, 03 Apr 2022 01:29:25 GMT",
+        "date": "Sun, 10 Apr 2022 01:33:42 GMT",
         "content-type": "text/html",
-        "x-request-id": "3b5bb5d0-2ada-4f93-9072-7e3d6da88449",
+        "x-request-id": "3116ec8e-16f6-4a76-a2a9-c83f09873ab2",
         "strict-transport-security": "max-age=31536000",
-        "last-modified": "Sat, 02 Apr 2022 12:42:08 GMT",
-        "etag": "W/\"624844a0-d087\"",
+        "last-modified": "Fri, 08 Apr 2022 16:37:00 GMT",
+        "etag": "W/\"625064ac-d248\"",
         "content-encoding": "gzip"
       },
       "endpoints": [
@@ -7336,19 +7340,19 @@
         "https://beta.gouv.fr/startups/": {
           "status": 200
         },
-        "https://beta.gouv.fr/communaute/": {
-          "status": 200
-        },
         "https://beta.gouv.fr/recrutement/": {
           "status": 200
         },
-        "https://beta.gouv.fr/approche/manifeste": {
+        "https://beta.gouv.fr/communaute/": {
+          "status": 200
+        },
+        "https://beta.gouv.fr/startups/justif.html": {
           "status": 200
         },
         "https://beta.gouv.fr/en/": {
           "status": 200
         },
-        "https://beta.gouv.fr/startups/lapins.html": {
+        "https://beta.gouv.fr/approche/manifeste": {
           "status": 200
         }
       },
@@ -7612,7 +7616,7 @@
     },
     "zap": {
       "@version": "2.11.1",
-      "@generated": "Sun, 3 Apr 2022 01:28:55",
+      "@generated": "Sun, 10 Apr 2022 01:33:10",
       "site": [
         {
           "@name": "https://beta.gouv.fr",
@@ -7640,13 +7644,6 @@
               "confidence": "2",
               "riskdesc": "Medium (Medium)",
               "desc": "<p>The response does not include either Content-Security-Policy with 'frame-ancestors' directive or X-Frame-Options to protect against 'ClickJacking' attacks.</p>"
-            },
-            {
-              "name": "Source Code Disclosure - Perl",
-              "riskcode": "2",
-              "confidence": "2",
-              "riskdesc": "Medium (Medium)",
-              "desc": "<p>Application Source Code was disclosed by the web server - Perl</p>"
             },
             {
               "name": "Sub Resource Integrity Attribute Missing",
@@ -7733,7 +7730,7 @@
     "lhr": {
       "requestedUrl": "https://beta.gouv.fr/",
       "finalUrl": "https://beta.gouv.fr/",
-      "fetchTime": "2022-04-03T01:29:03.385Z",
+      "fetchTime": "2022-04-10T01:33:19.404Z",
       "runWarnings": [],
       "categories": {
         "performance": {
@@ -7775,49 +7772,49 @@
           "description": "Collects all available metrics.",
           "score": null,
           "scoreDisplayMode": "informative",
-          "numericValue": 2016,
+          "numericValue": 1858,
           "numericUnit": "millisecond",
           "details": {
             "type": "debugdata",
             "items": [
               {
-                "firstContentfulPaint": 1268,
-                "firstMeaningfulPaint": 2016,
-                "largestContentfulPaint": 1791,
-                "firstCPUIdle": 2016,
-                "interactive": 2016,
-                "speedIndex": 1465,
+                "firstContentfulPaint": 1260,
+                "firstMeaningfulPaint": 1858,
+                "largestContentfulPaint": 1933,
+                "firstCPUIdle": 1858,
+                "interactive": 1858,
+                "speedIndex": 1737,
                 "estimatedInputLatency": 13,
                 "totalBlockingTime": 0,
-                "maxPotentialFID": 46,
+                "maxPotentialFID": 42,
                 "cumulativeLayoutShift": 0.053839149475097665,
                 "cumulativeLayoutShiftAllFrames": 0,
                 "observedTimeOrigin": 0,
-                "observedTimeOriginTs": 1055710959,
+                "observedTimeOriginTs": 966573436,
                 "observedNavigationStart": 0,
-                "observedNavigationStartTs": 1055710959,
-                "observedFirstPaint": 610,
-                "observedFirstPaintTs": 1056320970,
-                "observedFirstContentfulPaint": 610,
-                "observedFirstContentfulPaintTs": 1056320970,
-                "observedFirstMeaningfulPaint": 807,
-                "observedFirstMeaningfulPaintTs": 1056518182,
-                "observedLargestContentfulPaint": 709,
-                "observedLargestContentfulPaintTs": 1056419922,
-                "observedTraceEnd": 1985,
-                "observedTraceEndTs": 1057695959,
-                "observedLoad": 927,
-                "observedLoadTs": 1056637719,
-                "observedDomContentLoaded": 653,
-                "observedDomContentLoadedTs": 1056363566,
+                "observedNavigationStartTs": 966573436,
+                "observedFirstPaint": 770,
+                "observedFirstPaintTs": 967343803,
+                "observedFirstContentfulPaint": 770,
+                "observedFirstContentfulPaintTs": 967343803,
+                "observedFirstMeaningfulPaint": 990,
+                "observedFirstMeaningfulPaintTs": 967563447,
+                "observedLargestContentfulPaint": 990,
+                "observedLargestContentfulPaintTs": 967563447,
+                "observedTraceEnd": 2280,
+                "observedTraceEndTs": 968853563,
+                "observedLoad": 1223,
+                "observedLoadTs": 967796539,
+                "observedDomContentLoaded": 853,
+                "observedDomContentLoadedTs": 967426013,
                 "observedCumulativeLayoutShift": 0.053839149475097665,
                 "observedCumulativeLayoutShiftAllFrames": 0,
-                "observedFirstVisualChange": 613,
-                "observedFirstVisualChangeTs": 1056323959,
-                "observedLastVisualChange": 813,
-                "observedLastVisualChangeTs": 1056523959,
-                "observedSpeedIndex": 636,
-                "observedSpeedIndexTs": 1056346744
+                "observedFirstVisualChange": 771,
+                "observedFirstVisualChangeTs": 967344436,
+                "observedLastVisualChange": 987,
+                "observedLastVisualChangeTs": 967560436,
+                "observedSpeedIndex": 834,
+                "observedSpeedIndexTs": 967407635
               },
               {
                 "lcpInvalidated": false
@@ -7839,19 +7836,19 @@
                 "numScripts": 3,
                 "numStylesheets": 4,
                 "numFonts": 3,
-                "numTasks": 643,
-                "numTasksOver10ms": 3,
-                "numTasksOver25ms": 1,
+                "numTasks": 632,
+                "numTasksOver10ms": 4,
+                "numTasksOver25ms": 2,
                 "numTasksOver50ms": 0,
                 "numTasksOver100ms": 0,
                 "numTasksOver500ms": 0,
-                "rtt": 83.52399999999999,
-                "throughput": 6484933.430648243,
-                "maxRtt": 87.142,
-                "maxServerLatency": 66.349,
-                "totalByteWeight": 298358,
-                "totalTaskTime": 284.9719999999994,
-                "mainDocumentTransferSize": 13115
+                "rtt": 113.35399999999998,
+                "throughput": 4884067.887120834,
+                "maxRtt": 115.492,
+                "maxServerLatency": 57.755000000000024,
+                "totalByteWeight": 298960,
+                "totalTaskTime": 272.2869999999993,
+                "mainDocumentTransferSize": 13245
               }
             ]
           }
