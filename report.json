@@ -158,7 +158,7 @@
     "http": {
       "url": "https://www.fabrique.social.gouv.fr",
       "algorithm_version": 2,
-      "end_time": "Sun, 24 Apr 2022 00:59:36 GMT",
+      "end_time": "Sun, 01 May 2022 01:19:22 GMT",
       "grade": "A+",
       "hidden": false,
       "likelihood_indicator": "LOW",
@@ -167,7 +167,7 @@
         "Content-Encoding": "gzip",
         "Content-Security-Policy": "default-src 'none'; connect-src 'self' https://*.gouv.fr; font-src 'self'; img-src 'self'; prefetch-src 'self' https://*.gouv.fr; script-src 'self' https://*.gouv.fr; frame-src 'self' https://*.gouv.fr; style-src 'self' 'unsafe-inline'",
         "Content-Type": "text/html",
-        "Date": "Sun, 24 Apr 2022 00:59:33 GMT",
+        "Date": "Sun, 01 May 2022 01:19:19 GMT",
         "ETag": "W/\"625ed24e-6f8b\"",
         "Last-Modified": "Tue, 19 Apr 2022 15:16:30 GMT",
         "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
@@ -177,9 +177,9 @@
         "X-Frame-Options": "deny",
         "X-XSS-Protection": "1; mode=block"
       },
-      "scan_id": 25999639,
+      "scan_id": 26143151,
       "score": 100,
-      "start_time": "Sun, 24 Apr 2022 00:59:30 GMT",
+      "start_time": "Sun, 01 May 2022 01:19:17 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 0,
@@ -192,8 +192,8 @@
           "output": {
             "data": {
               "connect-src": [
-                "https://*.gouv.fr",
-                "'self'"
+                "'self'",
+                "https://*.gouv.fr"
               ],
               "default-src": [
                 "'none'"
@@ -202,19 +202,19 @@
                 "'self'"
               ],
               "frame-src": [
-                "https://*.gouv.fr",
-                "'self'"
+                "'self'",
+                "https://*.gouv.fr"
               ],
               "img-src": [
                 "'self'"
               ],
               "prefetch-src": [
-                "https://*.gouv.fr",
-                "'self'"
+                "'self'",
+                "https://*.gouv.fr"
               ],
               "script-src": [
-                "https://*.gouv.fr",
-                "'self'"
+                "'self'",
+                "https://*.gouv.fr"
               ],
               "style-src": [
                 "'self'",
@@ -628,7 +628,7 @@
         "ip": "www.fabrique.social.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "INFO",
-        "finding": "supported"
+        "finding": "not supported"
       },
       {
         "id": "TLS_timestamp",
@@ -768,7 +768,7 @@
         "ip": "www.fabrique.social.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "OK",
-        "finding": "85 >= 30 days"
+        "finding": "78 >= 30 days"
       },
       {
         "id": "cert_notBefore",
@@ -971,7 +971,7 @@
         "ip": "www.fabrique.social.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "INFO",
-        "finding": "1650763403"
+        "finding": "1651370508"
       },
       {
         "id": "HSTS_time",
@@ -1562,7 +1562,7 @@
         "ip": "www.fabrique.social.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "INFO",
-        "finding": "97"
+        "finding": "102"
       }
     ],
     "thirdparties": {
@@ -1573,7 +1573,7 @@
           "value": "1",
           "domain": "www.fabrique.social.gouv.fr",
           "path": "/",
-          "expires": 1650765139,
+          "expires": 1651372240,
           "size": 15,
           "httpOnly": false,
           "secure": false,
@@ -1585,10 +1585,10 @@
         },
         {
           "name": "_pk_id.2.6321",
-          "value": "b750fc0ef55a3316.1650763339.",
+          "value": "83cdde61e6ba0a39.1651370441.",
           "domain": "www.fabrique.social.gouv.fr",
           "path": "/",
-          "expires": 1684718539,
+          "expires": 1685325641,
           "size": 41,
           "httpOnly": false,
           "secure": false,
@@ -1600,7 +1600,7 @@
         }
       ],
       "headers": {
-        "date": "Sun, 24 Apr 2022 01:22:18 GMT",
+        "date": "Sun, 01 May 2022 02:00:39 GMT",
         "content-type": "text/html",
         "last-modified": "Tue, 19 Apr 2022 15:16:30 GMT",
         "vary": "Accept-Encoding",
@@ -1909,7 +1909,7 @@
     },
     "zap": {
       "@version": "2.11.1",
-      "@generated": "Sun, 24 Apr 2022 01:21:44",
+      "@generated": "Sun, 1 May 2022 02:00:02",
       "site": [
         {
           "@name": "https://www.fabrique.social.gouv.fr",
@@ -2012,359 +2012,7 @@
         "host": "https://www.fabrique.social.gouv.fr",
         "matched-at": "https://www.fabrique.social.gouv.fr",
         "ip": "20.74.14.77",
-        "timestamp": "2022-04-24T01:25:31.411089109Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.fabrique.social.gouv.fr'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "cross-origin-embedder-policy",
-        "type": "http",
-        "host": "https://www.fabrique.social.gouv.fr",
-        "matched-at": "https://www.fabrique.social.gouv.fr",
-        "ip": "20.74.14.77",
-        "timestamp": "2022-04-24T01:26:32.802432897Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.fabrique.social.gouv.fr'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "access-control-allow-origin",
-        "type": "http",
-        "host": "https://www.fabrique.social.gouv.fr",
-        "matched-at": "https://www.fabrique.social.gouv.fr",
-        "ip": "20.74.14.77",
-        "timestamp": "2022-04-24T01:26:32.802669902Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.fabrique.social.gouv.fr'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "access-control-allow-methods",
-        "type": "http",
-        "host": "https://www.fabrique.social.gouv.fr",
-        "matched-at": "https://www.fabrique.social.gouv.fr",
-        "ip": "20.74.14.77",
-        "timestamp": "2022-04-24T01:26:32.802818604Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.fabrique.social.gouv.fr'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "permission-policy",
-        "type": "http",
-        "host": "https://www.fabrique.social.gouv.fr",
-        "matched-at": "https://www.fabrique.social.gouv.fr",
-        "ip": "20.74.14.77",
-        "timestamp": "2022-04-24T01:26:32.807195083Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.fabrique.social.gouv.fr'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "x-permitted-cross-domain-policies",
-        "type": "http",
-        "host": "https://www.fabrique.social.gouv.fr",
-        "matched-at": "https://www.fabrique.social.gouv.fr",
-        "ip": "20.74.14.77",
-        "timestamp": "2022-04-24T01:26:32.807442787Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.fabrique.social.gouv.fr'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "cross-origin-opener-policy",
-        "type": "http",
-        "host": "https://www.fabrique.social.gouv.fr",
-        "matched-at": "https://www.fabrique.social.gouv.fr",
-        "ip": "20.74.14.77",
-        "timestamp": "2022-04-24T01:26:32.80757119Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.fabrique.social.gouv.fr'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "cross-origin-resource-policy",
-        "type": "http",
-        "host": "https://www.fabrique.social.gouv.fr",
-        "matched-at": "https://www.fabrique.social.gouv.fr",
-        "ip": "20.74.14.77",
-        "timestamp": "2022-04-24T01:26:32.807701692Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.fabrique.social.gouv.fr'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "access-control-allow-credentials",
-        "type": "http",
-        "host": "https://www.fabrique.social.gouv.fr",
-        "matched-at": "https://www.fabrique.social.gouv.fr",
-        "ip": "20.74.14.77",
-        "timestamp": "2022-04-24T01:26:32.807937296Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.fabrique.social.gouv.fr'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "access-control-expose-headers",
-        "type": "http",
-        "host": "https://www.fabrique.social.gouv.fr",
-        "matched-at": "https://www.fabrique.social.gouv.fr",
-        "ip": "20.74.14.77",
-        "timestamp": "2022-04-24T01:26:32.808074699Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.fabrique.social.gouv.fr'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "access-control-max-age",
-        "type": "http",
-        "host": "https://www.fabrique.social.gouv.fr",
-        "matched-at": "https://www.fabrique.social.gouv.fr",
-        "ip": "20.74.14.77",
-        "timestamp": "2022-04-24T01:26:32.808194501Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.fabrique.social.gouv.fr'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "referrer-policy",
-        "type": "http",
-        "host": "https://www.fabrique.social.gouv.fr",
-        "matched-at": "https://www.fabrique.social.gouv.fr",
-        "ip": "20.74.14.77",
-        "timestamp": "2022-04-24T01:26:32.808315303Z",
+        "timestamp": "2022-05-01T02:04:39.949159685Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.fabrique.social.gouv.fr'",
         "matcher-status": true,
         "matched-line": null
@@ -2396,60 +2044,360 @@
         "host": "https://www.fabrique.social.gouv.fr",
         "matched-at": "https://www.fabrique.social.gouv.fr",
         "ip": "20.74.14.77",
-        "timestamp": "2022-04-24T01:26:32.808436505Z",
+        "timestamp": "2022-05-01T02:04:55.763745724Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.fabrique.social.gouv.fr'",
         "matcher-status": true,
         "matched-line": null
       },
       {
-        "template": "ssl/ssl-dns-names.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/ssl-dns-names.yaml",
-        "template-id": "ssl-dns-names",
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
         "info": {
-          "name": "SSL DNS Names",
+          "name": "HTTP Missing Security Headers",
           "author": [
-            "pdteam"
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki"
           ],
           "tags": [
-            "ssl"
+            "misconfig",
+            "generic"
           ],
+          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
           "reference": null,
           "severity": "info"
         },
-        "type": "ssl",
+        "matcher-name": "cross-origin-opener-policy",
+        "type": "http",
         "host": "https://www.fabrique.social.gouv.fr",
         "matched-at": "https://www.fabrique.social.gouv.fr",
-        "extracted-results": [
-          "www.fabrique.social.gouv.fr"
-        ],
         "ip": "20.74.14.77",
-        "timestamp": "2022-04-24T01:26:51.492585746Z",
+        "timestamp": "2022-05-01T02:04:55.763979926Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.fabrique.social.gouv.fr'",
         "matcher-status": true,
         "matched-line": null
       },
       {
-        "template": "ssl/tls-version.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/tls-version.yaml",
-        "template-id": "tls-version",
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
         "info": {
-          "name": "TLS Version",
+          "name": "HTTP Missing Security Headers",
           "author": [
-            "pdteam"
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki"
           ],
           "tags": [
-            "ssl"
+            "misconfig",
+            "generic"
           ],
+          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
           "reference": null,
           "severity": "info"
         },
-        "type": "ssl",
+        "matcher-name": "access-control-allow-origin",
+        "type": "http",
         "host": "https://www.fabrique.social.gouv.fr",
         "matched-at": "https://www.fabrique.social.gouv.fr",
-        "extracted-results": [
-          "TLS13"
-        ],
         "ip": "20.74.14.77",
-        "timestamp": "2022-04-24T01:27:03.124208424Z",
+        "timestamp": "2022-05-01T02:04:55.768272175Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.fabrique.social.gouv.fr'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "access-control-allow-credentials",
+        "type": "http",
+        "host": "https://www.fabrique.social.gouv.fr",
+        "matched-at": "https://www.fabrique.social.gouv.fr",
+        "ip": "20.74.14.77",
+        "timestamp": "2022-05-01T02:04:55.768606579Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.fabrique.social.gouv.fr'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "access-control-expose-headers",
+        "type": "http",
+        "host": "https://www.fabrique.social.gouv.fr",
+        "matched-at": "https://www.fabrique.social.gouv.fr",
+        "ip": "20.74.14.77",
+        "timestamp": "2022-05-01T02:04:55.769080584Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.fabrique.social.gouv.fr'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "access-control-max-age",
+        "type": "http",
+        "host": "https://www.fabrique.social.gouv.fr",
+        "matched-at": "https://www.fabrique.social.gouv.fr",
+        "ip": "20.74.14.77",
+        "timestamp": "2022-05-01T02:04:55.769338987Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.fabrique.social.gouv.fr'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "x-permitted-cross-domain-policies",
+        "type": "http",
+        "host": "https://www.fabrique.social.gouv.fr",
+        "matched-at": "https://www.fabrique.social.gouv.fr",
+        "ip": "20.74.14.77",
+        "timestamp": "2022-05-01T02:04:55.769806893Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.fabrique.social.gouv.fr'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "referrer-policy",
+        "type": "http",
+        "host": "https://www.fabrique.social.gouv.fr",
+        "matched-at": "https://www.fabrique.social.gouv.fr",
+        "ip": "20.74.14.77",
+        "timestamp": "2022-05-01T02:04:55.770190597Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.fabrique.social.gouv.fr'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "cross-origin-resource-policy",
+        "type": "http",
+        "host": "https://www.fabrique.social.gouv.fr",
+        "matched-at": "https://www.fabrique.social.gouv.fr",
+        "ip": "20.74.14.77",
+        "timestamp": "2022-05-01T02:04:55.770333999Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.fabrique.social.gouv.fr'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "access-control-allow-methods",
+        "type": "http",
+        "host": "https://www.fabrique.social.gouv.fr",
+        "matched-at": "https://www.fabrique.social.gouv.fr",
+        "ip": "20.74.14.77",
+        "timestamp": "2022-05-01T02:04:55.771030306Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.fabrique.social.gouv.fr'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "permission-policy",
+        "type": "http",
+        "host": "https://www.fabrique.social.gouv.fr",
+        "matched-at": "https://www.fabrique.social.gouv.fr",
+        "ip": "20.74.14.77",
+        "timestamp": "2022-05-01T02:04:55.771174108Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.fabrique.social.gouv.fr'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "cross-origin-embedder-policy",
+        "type": "http",
+        "host": "https://www.fabrique.social.gouv.fr",
+        "matched-at": "https://www.fabrique.social.gouv.fr",
+        "ip": "20.74.14.77",
+        "timestamp": "2022-05-01T02:04:55.771799315Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.fabrique.social.gouv.fr'",
         "matcher-status": true,
         "matched-line": null
       },
@@ -2477,8 +2425,7 @@
             "cve-id": null,
             "cwe-id": [
               "cwe-200"
-            ],
-            "cvss-metrics": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+            ]
           }
         },
         "matcher-name": "nginxgeneric",
@@ -2486,8 +2433,60 @@
         "host": "https://www.fabrique.social.gouv.fr",
         "matched-at": "https://www.fabrique.social.gouv.fr/",
         "ip": "20.74.14.77",
-        "timestamp": "2022-04-24T01:27:14.390335413Z",
+        "timestamp": "2022-05-01T02:04:56.563538319Z",
         "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: www.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.fabrique.social.gouv.fr/'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "ssl/tls-version.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/tls-version.yaml",
+        "template-id": "tls-version",
+        "info": {
+          "name": "TLS Version",
+          "author": [
+            "pdteam"
+          ],
+          "tags": [
+            "ssl"
+          ],
+          "reference": null,
+          "severity": "info"
+        },
+        "type": "ssl",
+        "host": "https://www.fabrique.social.gouv.fr",
+        "matched-at": "https://www.fabrique.social.gouv.fr",
+        "extracted-results": [
+          "TLS13"
+        ],
+        "ip": "20.74.14.77",
+        "timestamp": "2022-05-01T02:05:06.265161449Z",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "ssl/ssl-dns-names.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/ssl-dns-names.yaml",
+        "template-id": "ssl-dns-names",
+        "info": {
+          "name": "SSL DNS Names",
+          "author": [
+            "pdteam"
+          ],
+          "tags": [
+            "ssl"
+          ],
+          "reference": null,
+          "severity": "info"
+        },
+        "type": "ssl",
+        "host": "https://www.fabrique.social.gouv.fr",
+        "matched-at": "https://www.fabrique.social.gouv.fr",
+        "extracted-results": [
+          "www.fabrique.social.gouv.fr"
+        ],
+        "ip": "20.74.14.77",
+        "timestamp": "2022-05-01T02:05:22.513195231Z",
         "matcher-status": true,
         "matched-line": null
       }
@@ -2495,7 +2494,7 @@
     "lhr": {
       "requestedUrl": "https://www.fabrique.social.gouv.fr/",
       "finalUrl": "https://www.fabrique.social.gouv.fr/",
-      "fetchTime": "2022-04-24T01:21:52.078Z",
+      "fetchTime": "2022-05-01T02:00:11.311Z",
       "runWarnings": [],
       "categories": {
         "performance": {
@@ -2537,49 +2536,49 @@
           "description": "Collects all available metrics.",
           "score": null,
           "scoreDisplayMode": "informative",
-          "numericValue": 4185,
+          "numericValue": 4698,
           "numericUnit": "millisecond",
           "details": {
             "type": "debugdata",
             "items": [
               {
-                "firstContentfulPaint": 1216,
-                "firstMeaningfulPaint": 1392,
-                "largestContentfulPaint": 2579,
-                "firstCPUIdle": 3545,
-                "interactive": 4185,
-                "speedIndex": 1929,
-                "estimatedInputLatency": 13,
-                "totalBlockingTime": 126,
-                "maxPotentialFID": 163,
+                "firstContentfulPaint": 1147,
+                "firstMeaningfulPaint": 1399,
+                "largestContentfulPaint": 2843,
+                "firstCPUIdle": 4067,
+                "interactive": 4698,
+                "speedIndex": 2374,
+                "estimatedInputLatency": 25,
+                "totalBlockingTime": 214,
+                "maxPotentialFID": 196,
                 "cumulativeLayoutShift": 0.000828776741532922,
                 "cumulativeLayoutShiftAllFrames": 0,
                 "observedTimeOrigin": 0,
-                "observedTimeOriginTs": 235852270,
+                "observedTimeOriginTs": 221287161,
                 "observedNavigationStart": 0,
-                "observedNavigationStartTs": 235852270,
-                "observedFirstPaint": 496,
-                "observedFirstPaintTs": 236348003,
-                "observedFirstContentfulPaint": 496,
-                "observedFirstContentfulPaintTs": 236348003,
-                "observedFirstMeaningfulPaint": 849,
-                "observedFirstMeaningfulPaintTs": 236701136,
-                "observedLargestContentfulPaint": 739,
-                "observedLargestContentfulPaintTs": 236591041,
-                "observedTraceEnd": 2275,
-                "observedTraceEndTs": 238127140,
-                "observedLoad": 1216,
-                "observedLoadTs": 237068755,
-                "observedDomContentLoaded": 692,
-                "observedDomContentLoadedTs": 236544587,
+                "observedNavigationStartTs": 221287161,
+                "observedFirstPaint": 603,
+                "observedFirstPaintTs": 221890014,
+                "observedFirstContentfulPaint": 603,
+                "observedFirstContentfulPaintTs": 221890014,
+                "observedFirstMeaningfulPaint": 957,
+                "observedFirstMeaningfulPaintTs": 222243730,
+                "observedLargestContentfulPaint": 1023,
+                "observedLargestContentfulPaintTs": 222310164,
+                "observedTraceEnd": 2687,
+                "observedTraceEndTs": 223974374,
+                "observedLoad": 1626,
+                "observedLoadTs": 222913282,
+                "observedDomContentLoaded": 845,
+                "observedDomContentLoadedTs": 222132502,
                 "observedCumulativeLayoutShift": 0.000828776741532922,
                 "observedCumulativeLayoutShiftAllFrames": 0,
-                "observedFirstVisualChange": 504,
-                "observedFirstVisualChangeTs": 236356270,
-                "observedLastVisualChange": 2271,
-                "observedLastVisualChangeTs": 238123270,
-                "observedSpeedIndex": 763,
-                "observedSpeedIndexTs": 236615702
+                "observedFirstVisualChange": 603,
+                "observedFirstVisualChangeTs": 221890161,
+                "observedLastVisualChange": 2687,
+                "observedLastVisualChangeTs": 223974161,
+                "observedSpeedIndex": 983,
+                "observedSpeedIndexTs": 222270609
               },
               {
                 "lcpInvalidated": false
@@ -2601,18 +2600,18 @@
                 "numScripts": 15,
                 "numStylesheets": 1,
                 "numFonts": 3,
-                "numTasks": 1200,
-                "numTasksOver10ms": 7,
-                "numTasksOver25ms": 2,
-                "numTasksOver50ms": 0,
+                "numTasks": 1314,
+                "numTasksOver10ms": 14,
+                "numTasksOver25ms": 3,
+                "numTasksOver50ms": 1,
                 "numTasksOver100ms": 0,
                 "numTasksOver500ms": 0,
-                "rtt": 82.24600000000001,
-                "throughput": 76748613.36405587,
-                "maxRtt": 83.278,
-                "maxServerLatency": 165.55599999999998,
-                "totalByteWeight": 7954658,
-                "totalTaskTime": 449.435999999999,
+                "rtt": 103.11,
+                "throughput": 51129282.570514105,
+                "maxRtt": 124.214,
+                "maxServerLatency": 96.8,
+                "totalByteWeight": 7954681,
+                "totalTaskTime": 633.5420000000006,
                 "mainDocumentTransferSize": 8238
               }
             ]
@@ -2622,9 +2621,11 @@
     },
     "screenshot": true,
     "stats": null,
+    "budget_page": null,
     "trivy": null,
     "declaration-a11y": null,
     "declaration-rgpd": null,
+    "betagouv": null,
     "summary": {
       "404": 8,
       "httpGrade": "A+",
@@ -5132,9 +5133,11 @@
     },
     "screenshot": true,
     "stats": null,
+    "budget_page": null,
     "trivy": null,
     "declaration-a11y": null,
     "declaration-rgpd": null,
+    "betagouv": null,
     "summary": {
       "404": "A+",
       "httpGrade": "F",
@@ -5300,7 +5303,7 @@
     "http": {
       "url": "https://beta.gouv.fr",
       "algorithm_version": 2,
-      "end_time": "Sun, 24 Apr 2022 01:10:44 GMT",
+      "end_time": "Sun, 01 May 2022 01:30:54 GMT",
       "grade": "D+",
       "hidden": false,
       "likelihood_indicator": "MEDIUM",
@@ -5308,16 +5311,16 @@
         "Connection": "keep-alive",
         "Content-Encoding": "gzip",
         "Content-Type": "text/html",
-        "Date": "Sun, 24 Apr 2022 01:10:42 GMT",
-        "ETag": "W/\"6262d2c4-d294\"",
-        "Last-Modified": "Fri, 22 Apr 2022 16:07:32 GMT",
+        "Date": "Sun, 01 May 2022 01:30:52 GMT",
+        "ETag": "W/\"626d3a46-d3a4\"",
+        "Last-Modified": "Sat, 30 Apr 2022 13:31:50 GMT",
         "Strict-Transport-Security": "max-age=31536000",
         "Transfer-Encoding": "chunked",
-        "X-Request-ID": "7d17e459-2f81-4faf-b8f4-b0627dbc4583"
+        "X-Request-ID": "e05c24a6-28bb-40a1-b105-11401ce162f3"
       },
-      "scan_id": 25999956,
+      "scan_id": 26143477,
       "score": 40,
-      "start_time": "Sun, 24 Apr 2022 01:10:40 GMT",
+      "start_time": "Sun, 01 May 2022 01:30:12 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 4,
@@ -5715,7 +5718,7 @@
         "ip": "beta.gouv.fr/5.104.101.30",
         "port": "443",
         "severity": "INFO",
-        "finding": "not supported"
+        "finding": "supported"
       },
       {
         "id": "sessionresumption_ID",
@@ -5862,7 +5865,7 @@
         "ip": "beta.gouv.fr/5.104.101.30",
         "port": "443",
         "severity": "OK",
-        "finding": "65 >= 30 days"
+        "finding": "58 >= 30 days"
       },
       {
         "id": "cert_notBefore",
@@ -6058,14 +6061,14 @@
         "ip": "beta.gouv.fr/5.104.101.30",
         "port": "443",
         "severity": "INFO",
-        "finding": "-1 seconds from localtime"
+        "finding": "0 seconds from localtime"
       },
       {
         "id": "HTTP_headerTime",
         "ip": "beta.gouv.fr/5.104.101.30",
         "port": "443",
         "severity": "INFO",
-        "finding": "1650764370"
+        "finding": "1651371166"
       },
       {
         "id": "HSTS_time",
@@ -6844,7 +6847,7 @@
         "ip": "beta.gouv.fr/109.232.236.90",
         "port": "443",
         "severity": "INFO",
-        "finding": "supported"
+        "finding": "not supported"
       },
       {
         "id": "TLS_timestamp",
@@ -6984,7 +6987,7 @@
         "ip": "beta.gouv.fr/109.232.236.90",
         "port": "443",
         "severity": "OK",
-        "finding": "65 >= 30 days"
+        "finding": "58 >= 30 days"
       },
       {
         "id": "cert_notBefore",
@@ -7187,7 +7190,7 @@
         "ip": "beta.gouv.fr/109.232.236.90",
         "port": "443",
         "severity": "INFO",
-        "finding": "1650764509"
+        "finding": "1651371262"
       },
       {
         "id": "HSTS_time",
@@ -7757,7 +7760,7 @@
         "ip": "beta.gouv.fr/109.232.236.90",
         "port": "443",
         "severity": "INFO",
-        "finding": "284"
+        "finding": "194"
       }
     ],
     "thirdparties": {
@@ -7768,7 +7771,7 @@
           "value": "1",
           "domain": "beta.gouv.fr",
           "path": "/",
-          "expires": 1650766098,
+          "expires": 1651372901,
           "size": 16,
           "httpOnly": false,
           "secure": false,
@@ -7780,10 +7783,10 @@
         },
         {
           "name": "_pk_id.21.968e",
-          "value": "83862ff7e1c95250.1650764298.",
+          "value": "756bd3f1711ea526.1651371102.",
           "domain": "beta.gouv.fr",
           "path": "/",
-          "expires": 1684719498,
+          "expires": 1685326302,
           "size": 42,
           "httpOnly": false,
           "secure": false,
@@ -7795,12 +7798,12 @@
         }
       ],
       "headers": {
-        "date": "Sun, 24 Apr 2022 01:38:17 GMT",
+        "date": "Sun, 01 May 2022 02:11:40 GMT",
         "content-type": "text/html",
-        "x-request-id": "7cdafb4f-77a9-4809-a19b-5db13113e520",
+        "x-request-id": "69f2a2ab-ff9d-45b9-84aa-1f6428f2f350",
         "strict-transport-security": "max-age=31536000",
-        "last-modified": "Fri, 22 Apr 2022 16:07:32 GMT",
-        "etag": "W/\"6262d2c4-d294\"",
+        "last-modified": "Sat, 30 Apr 2022 13:31:50 GMT",
+        "etag": "W/\"626d3a46-d3a4\"",
         "content-encoding": "gzip"
       },
       "endpoints": [
@@ -7882,6 +7885,9 @@
         "https://beta.gouv.fr/devenir-intrapreneur": {
           "status": 200
         },
+        "https://beta.gouv.fr/brigade/": {
+          "status": 200
+        },
         "https://beta.gouv.fr/startups/": {
           "status": 200
         },
@@ -7889,12 +7895,6 @@
           "status": 200
         },
         "https://beta.gouv.fr/recrutement/": {
-          "status": 200
-        },
-        "https://beta.gouv.fr/en/": {
-          "status": 200
-        },
-        "https://beta.gouv.fr/approche/manifeste": {
           "status": 200
         }
       },
@@ -8065,6 +8065,27 @@
           ]
         },
         {
+          "slug": "lozad-js",
+          "name": "Lozad.js",
+          "confidence": 100,
+          "version": null,
+          "icon": "default.svg",
+          "website": "https://apoorv.pro/lozad.js/",
+          "cpe": null,
+          "categories": [
+            {
+              "id": 59,
+              "slug": "javascript-libraries",
+              "name": "JavaScript libraries"
+            },
+            {
+              "id": 92,
+              "slug": "performance",
+              "name": "Performance"
+            }
+          ]
+        },
+        {
           "slug": "sendgrid",
           "name": "Sendgrid",
           "confidence": 100,
@@ -8137,7 +8158,7 @@
     },
     "zap": {
       "@version": "2.11.1",
-      "@generated": "Sun, 24 Apr 2022 01:37:47",
+      "@generated": "Sun, 1 May 2022 02:11:06",
       "site": [
         {
           "@name": "https://beta.gouv.fr",
@@ -8165,6 +8186,13 @@
               "confidence": "2",
               "riskdesc": "Medium (Medium)",
               "desc": "<p>The response does not include either Content-Security-Policy with 'frame-ancestors' directive or X-Frame-Options to protect against 'ClickJacking' attacks.</p>"
+            },
+            {
+              "name": "Source Code Disclosure - Perl",
+              "riskcode": "2",
+              "confidence": "2",
+              "riskdesc": "Medium (Medium)",
+              "desc": "<p>Application Source Code was disclosed by the web server - Perl</p>"
             },
             {
               "name": "Sub Resource Integrity Attribute Missing",
@@ -8249,486 +8277,6 @@
     },
     "nuclei": [
       {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "clear-site-data",
-        "type": "http",
-        "host": "https://beta.gouv.fr",
-        "matched-at": "https://beta.gouv.fr",
-        "ip": "5.104.101.30",
-        "timestamp": "2022-04-24T01:45:03.066846941Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://beta.gouv.fr'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "cross-origin-embedder-policy",
-        "type": "http",
-        "host": "https://beta.gouv.fr",
-        "matched-at": "https://beta.gouv.fr",
-        "ip": "5.104.101.30",
-        "timestamp": "2022-04-24T01:45:03.078319611Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://beta.gouv.fr'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "cross-origin-resource-policy",
-        "type": "http",
-        "host": "https://beta.gouv.fr",
-        "matched-at": "https://beta.gouv.fr",
-        "ip": "5.104.101.30",
-        "timestamp": "2022-04-24T01:45:03.079679531Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://beta.gouv.fr'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "x-content-type-options",
-        "type": "http",
-        "host": "https://beta.gouv.fr",
-        "matched-at": "https://beta.gouv.fr",
-        "ip": "5.104.101.30",
-        "timestamp": "2022-04-24T01:45:03.081014651Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://beta.gouv.fr'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "permission-policy",
-        "type": "http",
-        "host": "https://beta.gouv.fr",
-        "matched-at": "https://beta.gouv.fr",
-        "ip": "5.104.101.30",
-        "timestamp": "2022-04-24T01:45:03.082397972Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://beta.gouv.fr'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "x-frame-options",
-        "type": "http",
-        "host": "https://beta.gouv.fr",
-        "matched-at": "https://beta.gouv.fr",
-        "ip": "5.104.101.30",
-        "timestamp": "2022-04-24T01:45:03.08362799Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://beta.gouv.fr'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "x-permitted-cross-domain-policies",
-        "type": "http",
-        "host": "https://beta.gouv.fr",
-        "matched-at": "https://beta.gouv.fr",
-        "ip": "5.104.101.30",
-        "timestamp": "2022-04-24T01:45:03.086368031Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://beta.gouv.fr'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "access-control-expose-headers",
-        "type": "http",
-        "host": "https://beta.gouv.fr",
-        "matched-at": "https://beta.gouv.fr",
-        "ip": "5.104.101.30",
-        "timestamp": "2022-04-24T01:45:03.087254444Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://beta.gouv.fr'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "access-control-allow-methods",
-        "type": "http",
-        "host": "https://beta.gouv.fr",
-        "matched-at": "https://beta.gouv.fr",
-        "ip": "5.104.101.30",
-        "timestamp": "2022-04-24T01:45:03.087599549Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://beta.gouv.fr'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "content-security-policy",
-        "type": "http",
-        "host": "https://beta.gouv.fr",
-        "matched-at": "https://beta.gouv.fr",
-        "ip": "5.104.101.30",
-        "timestamp": "2022-04-24T01:45:03.088003855Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://beta.gouv.fr'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "access-control-max-age",
-        "type": "http",
-        "host": "https://beta.gouv.fr",
-        "matched-at": "https://beta.gouv.fr",
-        "ip": "5.104.101.30",
-        "timestamp": "2022-04-24T01:45:03.088810667Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://beta.gouv.fr'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "referrer-policy",
-        "type": "http",
-        "host": "https://beta.gouv.fr",
-        "matched-at": "https://beta.gouv.fr",
-        "ip": "5.104.101.30",
-        "timestamp": "2022-04-24T01:45:03.093782841Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://beta.gouv.fr'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "access-control-allow-origin",
-        "type": "http",
-        "host": "https://beta.gouv.fr",
-        "matched-at": "https://beta.gouv.fr",
-        "ip": "5.104.101.30",
-        "timestamp": "2022-04-24T01:45:03.09576877Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://beta.gouv.fr'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "access-control-allow-credentials",
-        "type": "http",
-        "host": "https://beta.gouv.fr",
-        "matched-at": "https://beta.gouv.fr",
-        "ip": "5.104.101.30",
-        "timestamp": "2022-04-24T01:45:03.096544481Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://beta.gouv.fr'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "cross-origin-opener-policy",
-        "type": "http",
-        "host": "https://beta.gouv.fr",
-        "matched-at": "https://beta.gouv.fr",
-        "ip": "5.104.101.30",
-        "timestamp": "2022-04-24T01:45:03.097049289Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://beta.gouv.fr'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
         "template": "miscellaneous/addeventlistener-detect.yaml",
         "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/miscellaneous/addeventlistener-detect.yaml",
         "template-id": "addeventlistener-detect",
@@ -8751,8 +8299,90 @@
         "host": "https://beta.gouv.fr",
         "matched-at": "https://beta.gouv.fr",
         "ip": "5.104.101.30",
-        "timestamp": "2022-04-24T01:45:03.135632461Z",
+        "timestamp": "2022-05-01T02:16:48.736894615Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://beta.gouv.fr'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "ssl/tls-version.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/tls-version.yaml",
+        "template-id": "tls-version",
+        "info": {
+          "name": "TLS Version",
+          "author": [
+            "pdteam"
+          ],
+          "tags": [
+            "ssl"
+          ],
+          "reference": null,
+          "severity": "info"
+        },
+        "type": "ssl",
+        "host": "https://beta.gouv.fr",
+        "matched-at": "https://beta.gouv.fr",
+        "extracted-results": [
+          "TLS13"
+        ],
+        "ip": "5.104.101.30",
+        "timestamp": "2022-05-01T02:16:53.916871504Z",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "exposures/configs/azure-domain-tenant.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposures/configs/azure-domain-tenant.yaml",
+        "template-id": "azure-domain-tenant",
+        "info": {
+          "name": "Microsoft Azure - Domain Tenant ID",
+          "author": [
+            "v0idc0de"
+          ],
+          "tags": [
+            "azure",
+            "microsoft",
+            "cloud"
+          ],
+          "description": "Checks if the domain is part of an Azure tenant and finds the ID using Azure's OpenID discovery page.",
+          "reference": null,
+          "severity": "info"
+        },
+        "type": "http",
+        "host": "https://beta.gouv.fr",
+        "matched-at": "https://login.microsoftonline.com:443/beta.gouv.fr/v2.0/.well-known/openid-configuration",
+        "extracted-results": [
+          "69e439be-1350-422a-baa9-ff64796a83cd"
+        ],
+        "ip": "20.190.154.139",
+        "timestamp": "2022-05-01T02:16:55.219770063Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Host: login.microsoftonline.com' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://login.microsoftonline.com:443/beta.gouv.fr/v2.0/.well-known/openid-configuration'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "ssl/ssl-dns-names.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/ssl-dns-names.yaml",
+        "template-id": "ssl-dns-names",
+        "info": {
+          "name": "SSL DNS Names",
+          "author": [
+            "pdteam"
+          ],
+          "tags": [
+            "ssl"
+          ],
+          "reference": null,
+          "severity": "info"
+        },
+        "type": "ssl",
+        "host": "https://beta.gouv.fr",
+        "matched-at": "https://beta.gouv.fr",
+        "extracted-results": [
+          "beta.gouv.fr"
+        ],
+        "ip": "5.104.101.30",
+        "timestamp": "2022-05-01T02:16:56.453291634Z",
         "matcher-status": true,
         "matched-line": null
       },
@@ -8776,8 +8406,7 @@
             "cve-id": null,
             "cwe-id": [
               "cwe-200"
-            ],
-            "cvss-metrics": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+            ]
           }
         },
         "type": "dns",
@@ -8787,50 +8416,7 @@
           "ns18.ovh.net.",
           "dns18.ovh.net."
         ],
-        "timestamp": "2022-04-24T01:45:11.968917466Z",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "dns/txt-fingerprint.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/dns/txt-fingerprint.yaml",
-        "template-id": "txt-fingerprint",
-        "info": {
-          "name": "DNS TXT Record Detected",
-          "author": [
-            "pdteam"
-          ],
-          "tags": [
-            "dns",
-            "txt"
-          ],
-          "description": "A DNS TXT record was detected. The TXT record lets a domain admin leave notes on a DNS server.",
-          "reference": [
-            "https://www.netspi.com/blog/technical/network-penetration-testing/analyzing-dns-txt-records-to-fingerprint-service-providers/"
-          ],
-          "severity": "info",
-          "classification": {
-            "cve-id": null,
-            "cwe-id": [
-              "cwe-200"
-            ],
-            "cvss-metrics": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
-          }
-        },
-        "type": "dns",
-        "host": "https://beta.gouv.fr",
-        "matched-at": "https://beta.gouv.fr",
-        "extracted-results": [
-          "\"google-site-verification=Mo4Mbev37H1GkeCJtasIGj320ipsKn0mKUl4KyrvFBM\"",
-          "\"Sendinblue-code:1e9473206dde93a169d3acf07bec0adf\"",
-          "\"Sendinblue-code:98107153cf48b6ee7f14ab7d0a1ab7b5\"",
-          "\"v=spf1 include:spf.sendinblue.com include:mx.ovh.com include:sendgrid.net include:spf.mailjet.com include:servers.mcsv.net ~all\"",
-          "\"google-site-verification=ejIpUG1rg69LP1NhluAU5YoR4HrV2avM5FvNuIwLSRY\"",
-          "\"google-site-verification=lfIzZXA-NeXZJYKhXJEpi89tvcAk4VsX2vOciP0ougo\"",
-          "\"Sendinblue-code:8929780161d193b814fa4fa4958461f3\"",
-          "\"MS=4A732B260FFD4F901CAE36FB0D99DED7FB8CDC12\""
-        ],
-        "timestamp": "2022-04-24T01:45:34.166123038Z",
+        "timestamp": "2022-05-01T02:17:00.260875097Z",
         "matcher-status": true,
         "matched-line": null
       },
@@ -8858,8 +8444,7 @@
             "cve-id": null,
             "cwe-id": [
               "cwe-200"
-            ],
-            "cvss-metrics": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+            ]
           }
         },
         "matcher-name": "nginxgeneric",
@@ -8867,34 +8452,33 @@
         "host": "https://beta.gouv.fr",
         "matched-at": "https://beta.gouv.fr/",
         "ip": "5.104.101.30",
-        "timestamp": "2022-04-24T01:45:41.381572725Z",
+        "timestamp": "2022-05-01T02:17:07.341248271Z",
         "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://beta.gouv.fr/'",
         "matcher-status": true,
         "matched-line": null
       },
       {
-        "template": "ssl/ssl-dns-names.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/ssl-dns-names.yaml",
-        "template-id": "ssl-dns-names",
+        "template": "exposed-panels/netlify-cms.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposed-panels/netlify-cms.yaml",
+        "template-id": "netlify-cms",
         "info": {
-          "name": "SSL DNS Names",
+          "name": "Netlify CMS Admin Panel",
           "author": [
-            "pdteam"
+            "sullo"
           ],
           "tags": [
-            "ssl"
+            "panel",
+            "netlify"
           ],
           "reference": null,
           "severity": "info"
         },
-        "type": "ssl",
+        "type": "http",
         "host": "https://beta.gouv.fr",
-        "matched-at": "https://beta.gouv.fr",
-        "extracted-results": [
-          "beta.gouv.fr"
-        ],
-        "ip": "109.232.236.90",
-        "timestamp": "2022-04-24T01:46:51.325251192Z",
+        "matched-at": "https://beta.gouv.fr/admin/index.html",
+        "ip": "5.104.101.30",
+        "timestamp": "2022-05-01T02:17:24.615573594Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://beta.gouv.fr/admin/index.html'",
         "matcher-status": true,
         "matched-line": null
       }
@@ -8902,7 +8486,7 @@
     "lhr": {
       "requestedUrl": "https://beta.gouv.fr/",
       "finalUrl": "https://beta.gouv.fr/",
-      "fetchTime": "2022-04-24T01:37:55.751Z",
+      "fetchTime": "2022-05-01T02:11:15.894Z",
       "runWarnings": [],
       "categories": {
         "performance": {
@@ -8944,49 +8528,49 @@
           "description": "Collects all available metrics.",
           "score": null,
           "scoreDisplayMode": "informative",
-          "numericValue": 1854,
+          "numericValue": 1818,
           "numericUnit": "millisecond",
           "details": {
             "type": "debugdata",
             "items": [
               {
-                "firstContentfulPaint": 1256,
-                "firstMeaningfulPaint": 1854,
-                "largestContentfulPaint": 1779,
-                "firstCPUIdle": 1854,
-                "interactive": 1854,
-                "speedIndex": 1713,
+                "firstContentfulPaint": 1208,
+                "firstMeaningfulPaint": 1818,
+                "largestContentfulPaint": 1893,
+                "firstCPUIdle": 1818,
+                "interactive": 1818,
+                "speedIndex": 1888,
                 "estimatedInputLatency": 13,
-                "totalBlockingTime": 0,
-                "maxPotentialFID": 46,
+                "totalBlockingTime": 4,
+                "maxPotentialFID": 54,
                 "cumulativeLayoutShift": 0.053839149475097665,
                 "cumulativeLayoutShiftAllFrames": 0,
                 "observedTimeOrigin": 0,
-                "observedTimeOriginTs": 1253551124,
+                "observedTimeOriginTs": 935821152,
                 "observedNavigationStart": 0,
-                "observedNavigationStartTs": 1253551124,
-                "observedFirstPaint": 772,
-                "observedFirstPaintTs": 1254323294,
-                "observedFirstContentfulPaint": 772,
-                "observedFirstContentfulPaintTs": 1254323294,
-                "observedFirstMeaningfulPaint": 966,
-                "observedFirstMeaningfulPaintTs": 1254516797,
-                "observedLargestContentfulPaint": 895,
-                "observedLargestContentfulPaintTs": 1254446067,
-                "observedTraceEnd": 2424,
-                "observedTraceEndTs": 1255975312,
-                "observedLoad": 1366,
-                "observedLoadTs": 1254917569,
-                "observedDomContentLoaded": 850,
-                "observedDomContentLoadedTs": 1254400901,
+                "observedNavigationStartTs": 935821152,
+                "observedFirstPaint": 695,
+                "observedFirstPaintTs": 936515829,
+                "observedFirstContentfulPaint": 695,
+                "observedFirstContentfulPaintTs": 936515829,
+                "observedFirstMeaningfulPaint": 832,
+                "observedFirstMeaningfulPaintTs": 936653461,
+                "observedLargestContentfulPaint": 832,
+                "observedLargestContentfulPaintTs": 936653461,
+                "observedTraceEnd": 2075,
+                "observedTraceEndTs": 937896602,
+                "observedLoad": 1016,
+                "observedLoadTs": 936837135,
+                "observedDomContentLoaded": 793,
+                "observedDomContentLoadedTs": 936614047,
                 "observedCumulativeLayoutShift": 0.053839149475097665,
                 "observedCumulativeLayoutShiftAllFrames": 0,
-                "observedFirstVisualChange": 782,
-                "observedFirstVisualChangeTs": 1254333124,
-                "observedLastVisualChange": 965,
-                "observedLastVisualChangeTs": 1254516124,
-                "observedSpeedIndex": 819,
-                "observedSpeedIndexTs": 1254369990
+                "observedFirstVisualChange": 691,
+                "observedFirstVisualChangeTs": 936512152,
+                "observedLastVisualChange": 841,
+                "observedLastVisualChangeTs": 936662152,
+                "observedSpeedIndex": 757,
+                "observedSpeedIndexTs": 936578035
               },
               {
                 "lcpInvalidated": false
@@ -9008,19 +8592,19 @@
                 "numScripts": 3,
                 "numStylesheets": 4,
                 "numFonts": 3,
-                "numTasks": 638,
-                "numTasksOver10ms": 4,
-                "numTasksOver25ms": 2,
+                "numTasks": 608,
+                "numTasksOver10ms": 5,
+                "numTasksOver25ms": 3,
                 "numTasksOver50ms": 0,
                 "numTasksOver100ms": 0,
                 "numTasksOver500ms": 0,
-                "rtt": 107.654,
-                "throughput": 4689549.007818877,
-                "maxRtt": 151.673,
-                "maxServerLatency": 53.59200000000001,
-                "totalByteWeight": 298744,
-                "totalTaskTime": 315.40599999999955,
-                "mainDocumentTransferSize": 13234
+                "rtt": 81.57,
+                "throughput": 7206949.198455455,
+                "maxRtt": 83.08099999999999,
+                "maxServerLatency": 6.176000000000002,
+                "totalByteWeight": 298959,
+                "totalTaskTime": 375.70499999999913,
+                "mainDocumentTransferSize": 13299
               }
             ]
           }
@@ -9029,9 +8613,11 @@
     },
     "screenshot": true,
     "stats": null,
+    "budget_page": null,
     "trivy": null,
     "declaration-a11y": null,
     "declaration-rgpd": null,
+    "betagouv": null,
     "summary": {
       "404": 7,
       "httpGrade": "D+",
