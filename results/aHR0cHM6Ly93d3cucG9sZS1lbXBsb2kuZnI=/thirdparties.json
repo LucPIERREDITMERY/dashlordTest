@@ -6,10 +6,6 @@
     },
     {
       "type": "unknown",
-      "url": "https://appdynamics.pole-emploi.fr/scripts/adrum-latest.js"
-    },
-    {
-      "type": "unknown",
       "url": "https://tag.aticdn.net/475540/smarttag.js"
     },
     {
@@ -22,19 +18,15 @@
     },
     {
       "type": "unknown",
-      "url": "https://hd.pe.fr/hit.xiti?s=475540&idclient=51e12c5e-387a-4ec6-a36c-773c7e40afe2&ts=1649553787497&page_url=https://www.pole-emploi.fr/accueil/&vtag=5.29.2&ptag=js&r=800x600x24x24&re=800x600&hl=1x23x7&lng=en-US&p=RGPD_Popin::Bandeau::Vu&s2=%20&click=N&pclick=Accueil_Pole_emploi_RUB153&s2click=1"
+      "url": "https://hd.pe.fr/hit.xiti?s=475540&idclient=517e27aa-3ec7-47b8-8b1e-0d421cdaba0c&ts=1655603259632&page_url=https://www.pole-emploi.fr/accueil/&vtag=5.29.2&ptag=js&r=800x600x24x24&re=800x600&hl=1x47x39&lng=en-US&p=RGPD_Popin::Bandeau::Vu&s2=%20&click=N&pclick=Accueil_Pole_emploi_RUB153&s2click=1"
     },
     {
       "type": "unknown",
-      "url": "https://hd.pe.fr/hit.xiti?s=475540&idclient=51e12c5e-387a-4ec6-a36c-773c7e40afe2&ts=1649553787494&page_url=https://www.pole-emploi.fr/accueil/&vtag=5.29.2&ptag=js&r=800x600x24x24&re=800x600&hl=1x23x7&lng=en-US&idp=0123075387523&jv=0&p=Accueil_Pole_emploi_RUB153&s2=1&x1=Angular&x2=Transverse&x3=0&x4=&x5=&x6=&x7=&x8=&x9=PO014&ref="
+      "url": "https://hd.pe.fr/hit.xiti?s=475540&idclient=517e27aa-3ec7-47b8-8b1e-0d421cdaba0c&ts=1655603259629&page_url=https://www.pole-emploi.fr/accueil/&vtag=5.29.2&ptag=js&r=800x600x24x24&re=800x600&hl=1x47x39&lng=en-US&idp=0147399641956&jv=0&p=Accueil_Pole_emploi_RUB153&s2=1&x1=Angular&x2=Transverse&x3=0&x4=&x5=&x6=&x7=&x8=&x9=PO014&ref="
     },
     {
       "type": "unknown",
-      "url": "https://hd.pe.fr/hit.xiti?s=475540&idclient=51e12c5e-387a-4ec6-a36c-773c7e40afe2&ts=1649553787496&page_url=https://www.pole-emploi.fr/accueil/&vtag=5.29.2&ptag=js&r=800x600x24x24&re=800x600&hl=1x23x7&lng=en-US&ati=PUB-[Accueil_Pole_emploi_RUB153]-[Carrefour_recrute_en_alternance]-[https_recrute_carrefour_fr_article_emploi-formation]-[emploi-formation]----&type=AT"
-    },
-    {
-      "type": "unknown",
-      "url": "https://appdynamics.pole-emploi.fr/scripts/adrum-ext.4a8dd0f950e3f613a821c330eb081cdc.js"
+      "url": "https://hd.pe.fr/hit.xiti?s=475540&idclient=517e27aa-3ec7-47b8-8b1e-0d421cdaba0c&ts=1655603259631&page_url=https://www.pole-emploi.fr/accueil/&vtag=5.29.2&ptag=js&r=800x600x24x24&re=800x600&hl=1x47x39&lng=en-US&ati=PUB-[Accueil_Pole_emploi_RUB153]-[Mobiville_trouver_l_emploi_et_la_ville_qui_va_avec]-[https_mobiville_pole-emploi_fr]-[https_mobiville_pole-emploi_fr]----&type=AT"
     }
   ],
   "cookies": [
@@ -43,7 +35,7 @@
       "value": "%7B%22name%22%3A%22atidvisitor%22%2C%22val%22%3A%7B%22vrn%22%3A%22-475540-%22%7D%2C%22options%22%3A%7B%22path%22%3A%22%2F%22%2C%22session%22%3A15724800%2C%22end%22%3A15724800%7D%7D",
       "domain": ".pole-emploi.fr",
       "path": "/",
-      "expires": 1665278587.490044,
+      "expires": 1671328059.623064,
       "size": 191,
       "httpOnly": false,
       "secure": true,
@@ -54,10 +46,10 @@
     },
     {
       "name": "atuserid",
-      "value": "%7B%22name%22%3A%22atuserid%22%2C%22val%22%3A%2251e12c5e-387a-4ec6-a36c-773c7e40afe2%22%2C%22options%22%3A%7B%22end%22%3A%222023-05-12T01%3A23%3A07.482Z%22%2C%22path%22%3A%22%2F%22%7D%7D",
+      "value": "%7B%22name%22%3A%22atuserid%22%2C%22val%22%3A%22517e27aa-3ec7-47b8-8b1e-0d421cdaba0c%22%2C%22options%22%3A%7B%22end%22%3A%222023-07-21T01%3A47%3A39.617Z%22%2C%22path%22%3A%22%2F%22%7D%7D",
       "domain": ".pole-emploi.fr",
       "path": "/",
-      "expires": 1683854587,
+      "expires": 1689904059,
       "size": 194,
       "httpOnly": false,
       "secure": true,
@@ -68,10 +60,10 @@
     },
     {
       "name": "TCPID",
-      "value": "12240123711055442188",
+      "value": "12260147397895788171",
       "domain": ".pole-emploi.fr",
       "path": "/",
-      "expires": 1683508987,
+      "expires": 1689558459,
       "size": 25,
       "httpOnly": false,
       "secure": false,
@@ -80,17 +72,31 @@
       "sameParty": false,
       "sourceScheme": "Secure",
       "sourcePort": 443
+    },
+    {
+      "name": "BIGipServerPOOL_PROD_HTTP_ERR",
+      "value": "671590592.6951.0000",
+      "domain": "www.pole-emploi.fr",
+      "path": "/",
+      "expires": -1,
+      "size": 48,
+      "httpOnly": true,
+      "secure": true,
+      "session": true,
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
     }
   ],
   "headers": {
-    "content-type": "text/html; charset=utf-8",
-    "vary": "Accept-Encoding",
-    "content-encoding": "gzip",
     "accept-ranges": "bytes",
+    "age": "5576",
     "connection": "Keep-Alive",
-    "date": "Sun, 10 Apr 2022 01:23:05 GMT",
-    "age": "1816",
-    "content-length": "48902"
+    "content-encoding": "gzip",
+    "content-length": "47491",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Sun, 19 Jun 2022 01:47:37 GMT",
+    "vary": "Accept-Encoding"
   },
   "endpoints": [
     {
@@ -218,64 +224,8 @@
       }
     },
     {
-      "hostname": "appdynamics.pole-emploi.fr",
-      "ip": "185.215.64.10",
-      "geoip": {
-        "continent": {
-          "code": "EU",
-          "geoname_id": 6255148,
-          "names": {
-            "de": "Europa",
-            "en": "Europe",
-            "es": "Europa",
-            "fr": "Europe",
-            "ja": "ヨーロッパ",
-            "pt-BR": "Europa",
-            "ru": "Европа",
-            "zh-CN": "欧洲"
-          }
-        },
-        "country": {
-          "geoname_id": 3017382,
-          "is_in_european_union": true,
-          "iso_code": "FR",
-          "names": {
-            "de": "Frankreich",
-            "en": "France",
-            "es": "Francia",
-            "fr": "France",
-            "ja": "フランス共和国",
-            "pt-BR": "França",
-            "ru": "Франция",
-            "zh-CN": "法国"
-          }
-        },
-        "location": {
-          "accuracy_radius": 200,
-          "latitude": 48.8582,
-          "longitude": 2.3387,
-          "time_zone": "Europe/Paris"
-        },
-        "registered_country": {
-          "geoname_id": 3017382,
-          "is_in_european_union": true,
-          "iso_code": "FR",
-          "names": {
-            "de": "Frankreich",
-            "en": "France",
-            "es": "Francia",
-            "fr": "France",
-            "ja": "フランス共和国",
-            "pt-BR": "França",
-            "ru": "Франция",
-            "zh-CN": "法国"
-          }
-        }
-      }
-    },
-    {
       "hostname": "tag.aticdn.net",
-      "ip": "13.226.230.101",
+      "ip": "13.226.139.104",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -397,7 +347,7 @@
     },
     {
       "hostname": "privacy.trustcommander.net",
-      "ip": "13.37.172.35",
+      "ip": "13.37.101.149",
       "geoip": {
         "city": {
           "geoname_id": 2988507,
@@ -491,7 +441,7 @@
     },
     {
       "hostname": "hd.pe.fr",
-      "ip": "13.35.95.100",
+      "ip": "13.33.165.79",
       "geoip": {
         "continent": {
           "code": "NA",

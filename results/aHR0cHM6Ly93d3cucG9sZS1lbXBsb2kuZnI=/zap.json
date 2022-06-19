@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 10 Apr 2022 01:22:08",
+	"@generated": "Sun, 19 Jun 2022 01:46:38",
 	"site":[ 
 		{
 			"@name": "https://www.pole-emploi.fr",
@@ -101,9 +101,16 @@
 							"param": "",
 							"attack": "",
 							"evidence": "<form method=\"get\" target=\"\" action=\"/annuaire/votre-pole-emploi.rechercheAgence.do\" id=\"agenceForm\" onsubmit=\"addRegionCriteria('');\">"
+						},
+						{
+							"uri": "https://www.pole-emploi.fr/candidat/vos-services-en-ligne/des-partenaires-pour-vous-propos.html",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form method=\"post\" name=\"searchFormPEHeader\" action=\"/informations/ma-recherche.html\" target=\"_self\" >"
 						}
 					],
-					"count": "12",
+					"count": "13",
 					"solution": "<p>Phase: Architecture and Design</p><p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p><p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</p><p></p><p>Phase: Implementation</p><p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</p><p></p><p>Phase: Architecture and Design</p><p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Use the ESAPI Session Management control.</p><p>This control includes a component for CSRF.</p><p></p><p>Do not use the GET method for any request that triggers a state change.</p><p></p><p>Phase: Implementation</p><p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</p>",
 					"otherinfo": "<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"checkbox-partner\" \"keywords-selectized\" \"location1-selectized\" ].</p>",
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
@@ -135,7 +142,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "661"
+					"sourceid": "650"
 				},
 				{
 					"pluginid": "10038",
@@ -265,13 +272,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.pole-emploi.fr/actualites/",
-							"method": "GET",
-							"param": "X-Frame-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://www.pole-emploi.fr/candidat/decouvrir-le-marche-du-travail.html",
 							"method": "GET",
 							"param": "X-Frame-Options",
@@ -308,6 +308,13 @@
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/candidat/pole-emploi-et-vous/oups--les-erreurs-les-plus-frequ.html",
+							"method": "GET",
+							"param": "X-Frame-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.pole-emploi.fr/candidat/vos-droits-et-demarches/vos-demarches-aupres-de-pole-emp/pour-poser-mes-questions.html",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
@@ -403,6 +410,13 @@
 							"evidence": "<script type=\"text/javascript\" src=\"https://cdn.tagcommander.com/4340/tc_PoleEmploi_23.js\" async></script>"
 						},
 						{
+							"uri": "https://www.pole-emploi.fr/candidat/soyez-vigilants.html",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\" src=\"https://cdn.tagcommander.com/4340/tc_PoleEmploi_23.js\" async></script>"
+						},
+						{
 							"uri": "https://www.pole-emploi.fr/candidat/vos-droits-et-demarches/vos-demarches-aupres-de-pole-emp/pour-poser-mes-questions.html",
 							"method": "GET",
 							"param": "",
@@ -429,13 +443,6 @@
 							"param": "",
 							"attack": "",
 							"evidence": "<script type=\"text/javascript\" src=\"https://cdn.tagcommander.com/4340/tc_PoleEmploi_23.js\" async></script>"
-						},
-						{
-							"uri": "https://www.pole-emploi.fr/region/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<script type=\"text/javascript\" src=\"https://cdn.tagcommander.com/4340/tc_PoleEmploi_23.js\" async></script>"
 						}
 					],
 					"count": "12",
@@ -444,7 +451,7 @@
 					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "387"
+					"sourceid": "399"
 				},
 				{
 					"pluginid": "10011",
@@ -478,41 +485,34 @@
 							"evidence": "Set-Cookie: JSESSIONID"
 						},
 						{
-							"uri": "https://www.pole-emploi.fr/candidat/pole-emploi-et-vous/le-role-du-conseiller.html",
+							"uri": "https://www.pole-emploi.fr/candidat/vos-services-en-ligne/des-partenaires-pour-vous-propos.html",
 							"method": "GET",
 							"param": "ADRUM_BT1",
 							"attack": "",
 							"evidence": "Set-Cookie: ADRUM_BT1"
 						},
 						{
-							"uri": "https://www.pole-emploi.fr/candidat/pole-emploi-et-vous/le-role-du-conseiller.html",
+							"uri": "https://www.pole-emploi.fr/candidat/vos-services-en-ligne/des-partenaires-pour-vous-propos.html",
 							"method": "GET",
 							"param": "ADRUM_BTa",
 							"attack": "",
 							"evidence": "Set-Cookie: ADRUM_BTa"
 						},
 						{
-							"uri": "https://www.pole-emploi.fr/candidat/vos-services-en-ligne.html",
+							"uri": "https://www.pole-emploi.fr/candidat/vos-services-en-ligne/des-partenaires-pour-vous-propos.html",
 							"method": "GET",
-							"param": "ADRUM_BT1",
+							"param": "JSESSIONID",
 							"attack": "",
-							"evidence": "Set-Cookie: ADRUM_BT1"
-						},
-						{
-							"uri": "https://www.pole-emploi.fr/candidat/vos-services-en-ligne.html",
-							"method": "GET",
-							"param": "ADRUM_BTa",
-							"attack": "",
-							"evidence": "Set-Cookie: ADRUM_BTa"
+							"evidence": "Set-Cookie: JSESSIONID"
 						}
 					],
-					"count": "7",
+					"count": "6",
 					"solution": "<p>Whenever a cookie contains sensitive information or is a session token, then it should always be passed using an encrypted channel. Ensure that the secure flag is set for cookies containing such sensitive information.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html</p>",
 					"cweid": "614",
 					"wascid": "13",
-					"sourceid": "133"
+					"sourceid": "129"
 				},
 				{
 					"pluginid": "10054",
@@ -524,13 +524,6 @@
 					"riskdesc": "Low (Medium)",
 					"desc": "<p>A cookie has been set without the SameSite attribute, which means that the cookie can be sent as a result of a 'cross-site' request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>",
 					"instances":[ 
-						{
-							"uri": "https://www.pole-emploi.fr/*?begin",
-							"method": "GET",
-							"param": "BIGipServerPOOL_PROD_HTTP_ERR",
-							"attack": "",
-							"evidence": "Set-Cookie: BIGipServerPOOL_PROD_HTTP_ERR"
-						},
 						{
 							"uri": "https://www.pole-emploi.fr/*?begin",
 							"method": "GET",
@@ -623,13 +616,13 @@
 							"evidence": "Set-Cookie: TS01debb55"
 						}
 					],
-					"count": "14",
+					"count": "13",
 					"solution": "<p>Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>",
 					"cweid": "1275",
 					"wascid": "13",
-					"sourceid": "10"
+					"sourceid": "70"
 				},
 				{
 					"pluginid": "10017",
@@ -691,6 +684,13 @@
 							"evidence": "<script type=\"text/javascript\" src=\"https://cdn.tagcommander.com/4340/tc_PoleEmploi_23.js\" async></script>"
 						},
 						{
+							"uri": "https://www.pole-emploi.fr/candidat/soyez-vigilants.html",
+							"method": "GET",
+							"param": "https://cdn.tagcommander.com/4340/tc_PoleEmploi_23.js",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\" src=\"https://cdn.tagcommander.com/4340/tc_PoleEmploi_23.js\" async></script>"
+						},
+						{
 							"uri": "https://www.pole-emploi.fr/candidat/vos-droits-et-demarches/vos-demarches-aupres-de-pole-emp/pour-poser-mes-questions.html",
 							"method": "GET",
 							"param": "https://cdn.tagcommander.com/4340/tc_PoleEmploi_23.js",
@@ -717,13 +717,6 @@
 							"param": "https://cdn.tagcommander.com/4340/tc_PoleEmploi_23.js",
 							"attack": "",
 							"evidence": "<script type=\"text/javascript\" src=\"https://cdn.tagcommander.com/4340/tc_PoleEmploi_23.js\" async></script>"
-						},
-						{
-							"uri": "https://www.pole-emploi.fr/region/",
-							"method": "GET",
-							"param": "https://cdn.tagcommander.com/4340/tc_PoleEmploi_23.js",
-							"attack": "",
-							"evidence": "<script type=\"text/javascript\" src=\"https://cdn.tagcommander.com/4340/tc_PoleEmploi_23.js\" async></script>"
 						}
 					],
 					"count": "12",
@@ -732,7 +725,7 @@
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "387"
+					"sourceid": "399"
 				},
 				{
 					"pluginid": "10110",
@@ -758,7 +751,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "128"
+					"sourceid": "124"
 				},
 				{
 					"pluginid": "10063",
@@ -799,7 +792,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.pole-emploi.fr/candidat/vos-services-en-ligne.html",
+							"uri": "https://www.pole-emploi.fr/candidat/vos-services-en-ligne/des-partenaires-pour-vous-propos.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -881,7 +874,7 @@
 							"evidence": "http://logp6.xiti.com/hit.xiti?s=475540&s2=10&p=transverse::Page_indisponible_(Erreur_404-transverse.html)&roimt=&roivc=&x1=Tapestry&x2=Transverse&x3=0"
 						},
 						{
-							"uri": "https://www.pole-emploi.fr/candidat/mes-droits-aux-aides-et-allocati.html",
+							"uri": "https://www.pole-emploi.fr/candidat/algorithmes.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -901,7 +894,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html</p>",
 					"cweid": "311",
 					"wascid": "4",
-					"sourceid": "10"
+					"sourceid": "70"
 				},
 				{
 					"pluginid": "10035",
@@ -1017,13 +1010,6 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.pole-emploi.fr/*?begin",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "671590592"
-						},
-						{
 							"uri": "https://www.pole-emploi.fr/actualites/",
 							"method": "GET",
 							"param": "",
@@ -1063,14 +1049,21 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "770968074"
+							"evidence": "1029114378"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/region/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "020649618"
+							"evidence": "008138691"
+						},
+						{
+							"uri": "https://www.pole-emploi.fr/region/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "022658001"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/region/",
@@ -1084,49 +1077,21 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "048834908"
+							"evidence": "06321745"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/region/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "055384394"
+							"evidence": "099500334"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/region/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "093022568"
-						},
-						{
-							"uri": "https://www.pole-emploi.fr/region/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "104135318"
-						},
-						{
-							"uri": "https://www.pole-emploi.fr/region/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "120874969"
-						},
-						{
-							"uri": "https://www.pole-emploi.fr/region/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "122342542"
-						},
-						{
-							"uri": "https://www.pole-emploi.fr/region/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "131096298"
+							"evidence": "102805717"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/region/",
@@ -1140,13 +1105,6 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "150517946"
-						},
-						{
-							"uri": "https://www.pole-emploi.fr/region/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
 							"evidence": "18811021"
 						},
 						{
@@ -1154,91 +1112,56 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "196641591"
+							"evidence": "199889711"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/region/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "235904242"
+							"evidence": "288827905"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/region/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "241558232"
+							"evidence": "294832299"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/region/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "261053283"
+							"evidence": "326921521"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/region/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "271672425"
+							"evidence": "335024918"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/region/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "336343676"
+							"evidence": "432701182"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/region/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "351954609"
+							"evidence": "438786703"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/region/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "356719292"
-						},
-						{
-							"uri": "https://www.pole-emploi.fr/region/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "357433832"
-						},
-						{
-							"uri": "https://www.pole-emploi.fr/region/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "360719775"
-						},
-						{
-							"uri": "https://www.pole-emploi.fr/region/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "366457263"
-						},
-						{
-							"uri": "https://www.pole-emploi.fr/region/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "405298678"
-						},
-						{
-							"uri": "https://www.pole-emploi.fr/region/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "433808009"
+							"evidence": "439798307"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/region/",
@@ -1252,63 +1175,77 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "515905968"
+							"evidence": "520867886"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/region/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "523678107"
+							"evidence": "524568699"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/region/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "571489803"
+							"evidence": "525709945"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/region/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "592652526"
+							"evidence": "562682049"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/region/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "615847568"
+							"evidence": "573922581"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/region/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "656945664"
+							"evidence": "613392569"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/region/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "663344198"
+							"evidence": "64492621"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/region/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "699809626"
+							"evidence": "652358174"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/region/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "72995896"
+							"evidence": "669844305"
+						},
+						{
+							"uri": "https://www.pole-emploi.fr/region/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "729195144"
+						},
+						{
+							"uri": "https://www.pole-emploi.fr/region/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "736918033"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/region/",
@@ -1322,6 +1259,34 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
+							"evidence": "755055467"
+						},
+						{
+							"uri": "https://www.pole-emploi.fr/region/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "755815248"
+						},
+						{
+							"uri": "https://www.pole-emploi.fr/region/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "770218341"
+						},
+						{
+							"uri": "https://www.pole-emploi.fr/region/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "774129413"
+						},
+						{
+							"uri": "https://www.pole-emploi.fr/region/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
 							"evidence": "797787591"
 						},
 						{
@@ -1329,70 +1294,84 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "802101902"
+							"evidence": "807308539"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/region/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "81682056"
+							"evidence": "809399417"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/region/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "82790881"
+							"evidence": "815336092"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/region/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "848550827"
+							"evidence": "87337274"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/region/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "92681262"
+							"evidence": "886638155"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/region/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "936106663"
+							"evidence": "887585946"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/region/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "972174895"
+							"evidence": "899393518"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/region/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "978711053"
+							"evidence": "902819591"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/region/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "986088501"
+							"evidence": "913520207"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/region/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "988474324"
+							"evidence": "934160175"
+						},
+						{
+							"uri": "https://www.pole-emploi.fr/region/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "948207095"
+						},
+						{
+							"uri": "https://www.pole-emploi.fr/region/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "951091824"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/sitemap.xml",
@@ -1402,13 +1381,13 @@
 							"evidence": "688367808"
 						}
 					],
-					"count": "55",
+					"count": "53",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>671590592, which evaluates to: 1991-04-14 00:56:32</p>",
+					"otherinfo": "<p>03341356, which evaluates to: 1970-02-08 16:09:16</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "10"
+					"sourceid": "399"
 				},
 				{
 					"pluginid": "10021",
@@ -1641,28 +1620,28 @@
 							"evidence": "query"
 						},
 						{
-							"uri": "https://www.pole-emploi.fr/candidat/pole-emploi-et-vous/le-role-du-conseiller.html",
+							"uri": "https://www.pole-emploi.fr/candidat/vos-services-en-ligne.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "bug"
 						},
 						{
-							"uri": "https://www.pole-emploi.fr/candidat/pole-emploi-et-vous/le-role-du-conseiller.html",
+							"uri": "https://www.pole-emploi.fr/candidat/vos-services-en-ligne.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "query"
 						},
 						{
-							"uri": "https://www.pole-emploi.fr/candidat/vos-services-en-ligne.html",
+							"uri": "https://www.pole-emploi.fr/candidat/vos-services-en-ligne/des-partenaires-pour-vous-propos.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "bug"
 						},
 						{
-							"uri": "https://www.pole-emploi.fr/candidat/vos-services-en-ligne.html",
+							"uri": "https://www.pole-emploi.fr/candidat/vos-services-en-ligne/des-partenaires-pour-vous-propos.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1713,11 +1692,11 @@
 					],
 					"count": "12",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
-					"otherinfo": "<p>The following pattern was used: \\bBUG\\b and was detected in the element starting with: \"<script id=\"staticAssetAggregatedJavascriptList0\" type=\"text/javascript\"></p><p>var jASAJ=jASAJ || new Array();</p><p>jASAJ.push('/modules/j\", see evidence field for the suspicious comment/snippet.</p>",
+					"otherinfo": "<p>The following pattern was used: \\bBUG\\b and was detected in the element starting with: \"<script type=\"application/json\" id=\"jahia-data-aggregatedjs\">{\"scripts\":[\"/modules/jquery/javascript/jquery-1.12.4.min.js\",\"/mod\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "133"
+					"sourceid": "129"
 				},
 				{
 					"pluginid": "10109",
@@ -1877,49 +1856,49 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1687"
+							"evidence": "Age: 5449"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/accueil/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1689"
+							"evidence": "Age: 5450"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/favicon.ico",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1633"
+							"evidence": "Age: 5444"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/img/logo-pe.svg",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 5581"
+							"evidence": "Age: 5182"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/js/xtclicks.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 303"
+							"evidence": "Age: 5428"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/js/xtcore.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 303"
+							"evidence": "Age: 5445"
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 6699"
+							"evidence": "Age: 2386"
 						}
 					],
 					"count": "7",
@@ -1942,6 +1921,13 @@
 					"instances":[ 
 						{
 							"uri": "https://www.pole-emploi.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.pole-emploi.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1991,13 +1977,6 @@
 						},
 						{
 							"uri": "https://www.pole-emploi.fr/js/jquery.min.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://www.pole-emploi.fr/js/respond.min.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",

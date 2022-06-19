@@ -359,8 +359,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "www.pole-emploi.fr/185.215.64.1",
               "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "95 >= 60 days"
+              "severity"     : "HIGH",
+              "finding"      : "expires < 30 days (25)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -373,7 +373,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "www.pole-emploi.fr/185.215.64.1",
               "port"         : "443",
-              "severity"     : "OK",
+              "severity"     : "HIGH",
               "finding"      : "2022-07-14 07:44"
           }
 ,         {
@@ -694,7 +694,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://censys.io/ipv4?q=8271F36203EFB98202A73B2D799D57588FEB6845423CD8F2C3E76E71AD19C552"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=8271F36203EFB98202A73B2D799D57588FEB6845423CD8F2C3E76E71AD19C552"
           }
 ,         {
               "id"           : "LOGJAM",
@@ -760,20 +760,6 @@
               "finding"      : "not vulnerable"
           }
 ,         {
-              "id"           : "clientsimulation-android_442",
-              "ip"           : "www.pole-emploi.fr/185.215.64.1",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-SHA"
-          }
-,         {
-              "id"           : "clientsimulation-android_500",
-              "ip"           : "www.pole-emploi.fr/185.215.64.1",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-SHA"
-          }
-,         {
               "id"           : "clientsimulation-android_60",
               "ip"           : "www.pole-emploi.fr/185.215.64.1",
               "port"         : "443",
@@ -809,7 +795,14 @@
               "finding"      : "TLSv1.2 ECDHE-RSA-AES128-SHA"
           }
 ,         {
-              "id"           : "clientsimulation-chrome_74_win10",
+              "id"           : "clientsimulation-android_11",
+              "ip"           : "www.pole-emploi.fr/185.215.64.1",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-SHA"
+          }
+,         {
+              "id"           : "clientsimulation-android_12",
               "ip"           : "www.pole-emploi.fr/185.215.64.1",
               "port"         : "443",
               "severity"     : "INFO",
@@ -823,6 +816,13 @@
               "finding"      : "TLSv1.2 ECDHE-RSA-AES128-SHA"
           }
 ,         {
+              "id"           : "clientsimulation-chrome_101_win10",
+              "ip"           : "www.pole-emploi.fr/185.215.64.1",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-SHA"
+          }
+,         {
               "id"           : "clientsimulation-firefox_66_win81",
               "ip"           : "www.pole-emploi.fr/185.215.64.1",
               "port"         : "443",
@@ -830,7 +830,7 @@
               "finding"      : "TLSv1.2 ECDHE-RSA-AES128-SHA"
           }
 ,         {
-              "id"           : "clientsimulation-firefox_71_win10",
+              "id"           : "clientsimulation-firefox_100_win10",
               "ip"           : "www.pole-emploi.fr/185.215.64.1",
               "port"         : "443",
               "severity"     : "INFO",
@@ -893,35 +893,7 @@
               "finding"      : "TLSv1.2 ECDHE-RSA-AES128-SHA"
           }
 ,         {
-              "id"           : "clientsimulation-edge_17_win10",
-              "ip"           : "www.pole-emploi.fr/185.215.64.1",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-SHA"
-          }
-,         {
-              "id"           : "clientsimulation-opera_66_win10",
-              "ip"           : "www.pole-emploi.fr/185.215.64.1",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-SHA"
-          }
-,         {
-              "id"           : "clientsimulation-safari_9_ios9",
-              "ip"           : "www.pole-emploi.fr/185.215.64.1",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-SHA"
-          }
-,         {
-              "id"           : "clientsimulation-safari_9_osx1011",
-              "ip"           : "www.pole-emploi.fr/185.215.64.1",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-SHA"
-          }
-,         {
-              "id"           : "clientsimulation-safari_10_osx1012",
+              "id"           : "clientsimulation-edge_101_win10_21h2",
               "ip"           : "www.pole-emploi.fr/185.215.64.1",
               "port"         : "443",
               "severity"     : "INFO",
@@ -942,18 +914,11 @@
               "finding"      : "TLSv1.2 ECDHE-RSA-AES128-SHA"
           }
 ,         {
-              "id"           : "clientsimulation-apple_ats_9_ios9",
+              "id"           : "clientsimulation-safari_154_osx_1231",
               "ip"           : "www.pole-emploi.fr/185.215.64.1",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.2 ECDHE-RSA-AES128-SHA"
-          }
-,         {
-              "id"           : "clientsimulation-java_6u45",
-              "ip"           : "www.pole-emploi.fr/185.215.64.1",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.0 AES128-SHA"
           }
 ,         {
               "id"           : "clientsimulation-java_7u25",
@@ -977,7 +942,21 @@
               "finding"      : "TLSv1.2 ECDHE-RSA-AES128-SHA"
           }
 ,         {
-              "id"           : "clientsimulation-java1201",
+              "id"           : "clientsimulation-java1703",
+              "ip"           : "www.pole-emploi.fr/185.215.64.1",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-SHA"
+          }
+,         {
+              "id"           : "clientsimulation-go_1178",
+              "ip"           : "www.pole-emploi.fr/185.215.64.1",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-SHA"
+          }
+,         {
+              "id"           : "clientsimulation-libressl_283",
               "ip"           : "www.pole-emploi.fr/185.215.64.1",
               "port"         : "443",
               "severity"     : "INFO",
@@ -1005,7 +984,21 @@
               "finding"      : "TLSv1.2 ECDHE-RSA-AES128-SHA"
           }
 ,         {
-              "id"           : "clientsimulation-thunderbird_68_3_1",
+              "id"           : "clientsimulation-openssl_303",
+              "ip"           : "www.pole-emploi.fr/185.215.64.1",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-SHA"
+          }
+,         {
+              "id"           : "clientsimulation-apple_mail_16_0",
+              "ip"           : "www.pole-emploi.fr/185.215.64.1",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-SHA"
+          }
+,         {
+              "id"           : "clientsimulation-thunderbird_91_9",
               "ip"           : "www.pole-emploi.fr/185.215.64.1",
               "port"         : "443",
               "severity"     : "INFO",
@@ -1107,6 +1100,6 @@
               "ip"           : "www.pole-emploi.fr/185.215.64.1",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "179"
+              "finding"      : "126"
           }
 ]
