@@ -21,11 +21,11 @@
 ###########################################################</span>
 
  Using &quot;OpenSSL 1.0.2-chacha (1.0.2k-dev)&quot; [~183 ciphers]
- on fv-az243-75:/home/testssl/bin/openssl.Linux.x86_64
+ on fv-az426-824:/home/testssl/bin/openssl.Linux.x86_64
  (built: &quot;Jan 18 17:12:17 2019&quot;, platform: &quot;linux-x86_64&quot;)
 
 
-<span style="color:white;background-color:black;"> Start 2022-04-10 01:23:25        --&gt;&gt; 185.215.64.1:443 (www.pole-emploi.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2022-06-19 01:47:55        --&gt;&gt; 185.215.64.1:443 (www.pole-emploi.fr) &lt;&lt;--</span>
 
  rDNS (185.215.64.1):    www.pole-emploi.fr.
  Service detected:       HTTP
@@ -101,7 +101,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#008817;">Ok via SAN and CN</span> (same w/o SNI)
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       yes 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">95 &gt;= 60 days</span> (2021-06-16 07:44 --&gt; 2022-07-14 07:44)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#e52207;">expires &lt; 30 days (25)</span> (2021-06-16 07:44 --&gt; 2022-07-14 07:44)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
 <span style="font-weight:bold;"> Certificate Revocation List  </span>http://crl.entrust.net/level1m.crl
 <span style="font-weight:bold;"> OCSP URI                     </span>http://ocsp.entrust.net
@@ -143,8 +143,8 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> SWEET32</span> (CVE-2016-2183, CVE-2016-6329)    <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
 <span style="font-weight:bold;"> FREAK</span> (CVE-2015-0204)                     <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
 <span style="font-weight:bold;"> DROWN</span> (CVE-2016-0800, CVE-2016-0703)      <span style="color:#008817;font-weight:bold;">not vulnerable on this host and port (OK)</span>
-                                           make sure you don&apos;t use this certificate elsewhere with SSLv2 enabled services
-                                           <a href="https://censys.io/ipv4?q=8271F36203EFB98202A73B2D799D57588FEB6845423CD8F2C3E76E71AD19C552" style="color:black;text-decoration:none;">https://censys.io/ipv4?q=8271F36203EFB98202A73B2D799D57588FEB6845423CD8F2C3E76E71AD19C552</a> could help you to find out
+                                           make sure you don&apos;t use this certificate elsewhere with SSLv2 enabled services, see
+                                           <a href="https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=8271F36203EFB98202A73B2D799D57588FEB6845423CD8F2C3E76E71AD19C552" style="color:black;text-decoration:none;">https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=8271F36203EFB98202A73B2D799D57588FEB6845423CD8F2C3E76E71AD19C552</a>
 <span style="font-weight:bold;"> LOGJAM</span> (CVE-2015-4000), experimental      <span style="color:#008817;">not vulnerable (OK):</span> no DH EXPORT ciphers, no DH key detected with &lt;= TLS 1.2
 <span style="font-weight:bold;"> BEAST</span> (CVE-2011-3389)                     TLS1: <span style="color:#a86437;">ECDHE-RSA-AES128-SHA
                                                  ECDHE-RSA-AES256-SHA
@@ -161,17 +161,17 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 
  Browser                      Protocol  Cipher Suite Name (OpenSSL)       Forward Secrecy
 ------------------------------------------------------------------------------------------------
- Android 4.4.2                TLSv1.2   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
- Android 5.0.0                TLSv1.2   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
  Android 6.0                  TLSv1.2   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
  Android 7.0 (native)         TLSv1.2   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
  Android 8.1 (native)         TLSv1.2   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
  Android 9.0 (native)         TLSv1.2   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
  Android 10.0 (native)        TLSv1.2   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
- Chrome 74 (Win 10)           TLSv1.2   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
+ Android 11 (native)          TLSv1.2   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
+ Android 12 (native)          TLSv1.2   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
  Chrome 79 (Win 10)           TLSv1.2   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
+ Chrome 101 (Win 10)          TLSv1.2   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
  Firefox 66 (Win 8.1/10)      TLSv1.2   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
- Firefox 71 (Win 10)          TLSv1.2   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
+ Firefox 100 (Win 10)         TLSv1.2   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
  IE 6 XP                      No connection
  IE 8 Win 7                   TLSv1.0   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
  IE 8 XP                      No connection
@@ -180,23 +180,22 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
  IE 11 Win Phone 8.1          TLSv1.2   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
  IE 11 Win 10                 TLSv1.2   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
  Edge 15 Win 10               TLSv1.2   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
- Edge 17 (Win 10)             TLSv1.2   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
- Opera 66 (Win 10)            TLSv1.2   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
- Safari 9 iOS 9               TLSv1.2   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
- Safari 9 OS X 10.11          TLSv1.2   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
- Safari 10 OS X 10.12         TLSv1.2   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
+ Edge 101 Win 10 21H2         TLSv1.2   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
  Safari 12.1 (iOS 12.2)       TLSv1.2   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
  Safari 13.0 (macOS 10.14.6)  TLSv1.2   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
- Apple ATS 9 iOS 9            TLSv1.2   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
- Java 6u45                    TLSv1.0   AES128-SHA                        No FS
+ Safari 15.4 (macOS 12.3.1)   TLSv1.2   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
  Java 7u25                    TLSv1.0   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
  Java 8u161                   TLSv1.2   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
  Java 11.0.2 (OpenJDK)        TLSv1.2   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
- Java 12.0.1 (OpenJDK)        TLSv1.2   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
+ Java 17.0.3 (OpenJDK)        TLSv1.2   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
+ go 1.17.8                    TLSv1.2   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
+ LibreSSL 2.8.3 (Apple)       TLSv1.2   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
  OpenSSL 1.0.2e               TLSv1.2   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
  OpenSSL 1.1.0l (Debian)      TLSv1.2   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
  OpenSSL 1.1.1d (Debian)      TLSv1.2   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
- Thunderbird (68.3)           TLSv1.2   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
+ OpenSSL 3.0.3 (git)          TLSv1.2   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
+ Apple Mail (16.0)            TLSv1.2   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
+ Thunderbird (91.9)           TLSv1.2   ECDHE-RSA-AES128-SHA              <span style="color:#008817;">256 bit ECDH (P-256)</span>
 
 
 <span style="text-decoration:underline;font-weight:bold;"> Rating (experimental) </span>
@@ -212,7 +211,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
                               Grade capped to B. TLS 1.0 offered
                               Grade capped to A. HSTS is not offered
 
-<span style="color:white;background-color:black;"> Done 2022-04-10 01:26:22 [ 179s] --&gt;&gt; 185.215.64.1:443 (www.pole-emploi.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2022-06-19 01:49:59 [ 126s] --&gt;&gt; 185.215.64.1:443 (www.pole-emploi.fr) &lt;&lt;--</span>
 
 
 </pre>
